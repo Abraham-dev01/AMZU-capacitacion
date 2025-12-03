@@ -1,0 +1,90 @@
+/* Responsive typography for footer directory links */
+.footer-dir-text {
+    /* Fluid scale: min 0.95rem, prefers ~2.4vw, max 2.2rem (prev inline was 3rem) */
+    font-size: clamp(0.95rem, 2.4vw, 2.2rem);
+    line-height: 1.1;
+    display: inline-block;
+}
+
+/* Fine-tune on very small devices */
+@media (max-width: 480px) {
+    .footer-dir-text {
+        font-size: clamp(0.9rem, 3.8vw, 1.6rem);
+    }
+}
+
+/* Ensure container keeps centering without inline styles */
+.footer-dir-mark {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    gap: 0.6rem;
+    /* espacio consistente entre icono y texto */
+}
+
+/* Optional hover emphasis without layout shift */
+.footer-dir-link:hover .footer-dir-text {
+    text-decoration: underline;
+}
+
+/* Accessibility: reduce motion users keep consistent size if they prefer */
+@media (prefers-reduced-motion: reduce) {
+    .footer-dir-text {
+        transition: none;
+    }
+}
+
+/* Responsive overrides para footer (directorio y contactos) */
+@media (max-width: 991.98px) {
+
+    /* Escalonar tipografía del directorio antes de móvil extremo */
+    .footer-dir-text {
+        font-size: 1.4rem;
+        line-height: 1.15;
+    }
+}
+
+@media (max-width: 767.98px) {
+    .footer-dir-link {
+        display: block;
+    }
+
+    .footer-dir-mark {
+        display: flex;
+        align-items: center;
+        justify-content: flex-start;
+    }
+
+    .footer-dir-text {
+        font-size: 1.05rem !important;
+        padding-top: 0.2rem !important;
+        letter-spacing: .5px;
+    }
+
+    .footer-nav__item+.footer-nav__item {
+        margin-top: .4rem;
+    }
+
+    /* Permitir que el texto largo (preguntas frecuentes) se parta */
+    .footer-dir-text {
+        white-space: normal;
+        word-break: break-word;
+    }
+
+    /* Enlaces de contacto (correo y teléfono) más pequeños y adaptables */
+    .mxd-point-subtitle a {
+        font-size: .85rem !important;
+        word-break: break-all;
+    }
+
+    .mxd-point-subtitle svg {
+        flex-shrink: 0;
+    }
+
+    .mxd-point-subtitle {
+        display: flex;
+        align-items: flex-start;
+        gap: .4rem;
+    }
+}

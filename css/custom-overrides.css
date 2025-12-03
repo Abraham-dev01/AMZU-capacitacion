@@ -1,0 +1,85 @@
+/* Custom overrides: equalize image heights for sliders and demo cards */
+
+/* Slider images: make them same height and cover the area */
+.mxd-demo-swiper .demo-swiper-slide__image,
+.mxd-demo-swiper .demo-swiper-slide__image img {
+  width: 100%;
+  height: 760px;
+  object-fit: cover;
+  display: block;
+}
+
+/* If using the image wrapper as link, ensure it's a block-level element */
+.mxd-demo-swiper .demo-swiper-slide__image {
+  display: block;
+  overflow: hidden;
+}
+
+/* Make slide description vertically align if needed */
+.mxd-demo-swiper__slide .demo-swiper-slide__descr {
+  min-height: 60px;
+}
+
+/* Responsive heights */
+@media (max-width: 1200px) {
+  .mxd-demo-swiper .demo-swiper-slide__image,
+  .mxd-demo-swiper .demo-swiper-slide__image img {
+    height: 300px;
+  }
+}
+
+@media (max-width: 768px) {
+  .mxd-demo-swiper .demo-swiper-slide__image,
+  .mxd-demo-swiper .demo-swiper-slide__image img {
+    height: 220px;
+  }
+}
+
+/* Optional: equalize demo cards / list thumbnails (uncomment if you want same treatment) */
+/*.mxd-demo-list__item img,
+.mxd-demo-cards__image img {
+  width:100%;
+  height:300px;
+  object-fit:cover;
+  display:block;
+}*/
+
+/* Footer social icons: color adapts to theme (light/dark) */
+.mxd-footer-nav__list .footer-social-link {
+  color: #111; /* default for light mode */
+  background: transparent; /* minimal */
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  text-decoration: none;
+}
+
+/* Dark mode: make icons white */
+[color-scheme=dark] .mxd-footer-nav__list .footer-social-link {
+  color: #fff;
+}
+
+/* Ensure SVG uses currentColor and scale nicely */
+.mxd-footer-nav__list .footer-social-link svg {
+  width: 18px;
+  height: 18px;
+  display: block;
+}
+
+/* Container for icons */
+.mxd-footer-nav__list .footer-social-list {
+  display: flex;
+  gap: .5rem;
+  align-items: center;
+}
+
+/* Hover/focus: subtle lift and color change */
+.mxd-footer-nav__list .footer-social-link:hover,
+.mxd-footer-nav__list .footer-social-link:focus {
+  transform: translateY(-2px);
+  transition: transform .12s ease, opacity .12s ease;
+  opacity: 0.95;
+}
