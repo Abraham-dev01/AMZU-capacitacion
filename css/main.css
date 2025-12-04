@@ -8123,7 +8123,7 @@ form textarea:required:valid {
 .mxd-hero-00__marquee {
   position: absolute;
   top: 7.6rem;
-  right: 0;
+  right: 50;
   width: 100%;
   background-color: var(--accent);
   border: 1px solid var(--base);
@@ -8172,7 +8172,7 @@ form textarea:required:valid {
 @media only screen and (min-width: 768px) {
   .mxd-hero-00__marquee {
     top: 0;
-    width: 484px;
+    width: 520px;
     height: 88px;
     -moz-border-radius: 4.4rem;
     border-radius: 4.4rem;
@@ -8198,8 +8198,8 @@ form textarea:required:valid {
 
 @media only screen and (min-width: 1200px) {
   .mxd-hero-00__marquee {
-    width: 719px;
-    height: 132px;
+    width: 850px;
+    height: 140px;
     -moz-border-radius: 6.6rem;
     border-radius: 6.6rem;
   }
@@ -8221,14 +8221,14 @@ form textarea:required:valid {
 
 @media only screen and (min-width: 1600px) {
   .mxd-hero-00__marquee {
-    width: 816px;
-    height: 154px;
+    width: 1210px;
+    height: 114px;
     -moz-border-radius: 7.7rem;
     border-radius: 7.7rem;
   }
 
   .mxd-hero-00__marquee .marquee__item.item-regular p {
-    font-size: 14rem;
+    font-size: 10rem;
   }
 
   .mxd-hero-00__marquee .marquee__item.item-regular svg {
