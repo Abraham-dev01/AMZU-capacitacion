@@ -83,3 +83,75 @@
   transition: transform .12s ease, opacity .12s ease;
   opacity: 0.95;
 }
+
+/* Contenedor de las tarjetas */
+.mxd-demo-list__row {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: stretch;
+  gap: 30px;
+  margin-top: 40px;
+}
+
+/* Tarjeta individual */
+.mxd-demo-list__item {
+  flex: 1 1 45%; /* ambas ocupan aprox. la mitad del ancho */
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  background: #fff;
+  border-radius: 15px;
+  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  padding: 25px;
+  text-align: justify;
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  min-width: 320px;
+}
+
+/* Imagen */
+.mxd-demo-list__image img {
+  width: 100%;
+  height: auto;
+  border-radius: 10px;
+}
+
+/* Título + ícono */
+.mxd-demo-list__caption {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 15px;
+}
+
+.mxd-demo-list__link {
+  display: flex;
+  align-items: center;
+  font-weight: 600;
+  color: #111;
+}
+
+.mxd-demo-list__link i {
+  margin-right: 6px;
+  color: #111;
+}
+
+/* Texto del párrafo */
+.mxd-demo-list__item p {
+  min-height: 80px;
+  margin-top: 15px;
+  color: #555;
+  line-height: 1.5;
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  .mxd-demo-list__item {
+    flex: 1 1 100%;
+    max-width: 500px;
+  }
+
+  .mxd-demo-list__row {
+    gap: 20px;
+  }
+}
