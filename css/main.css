@@ -22196,20 +22196,20 @@ form textarea:required:valid {
 
 @media only screen and (min-width: 768px) {
   .mxd-blog-preview__media {
-    height: 600px;
+    height: 400px;
     margin-bottom: 2.4rem;
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .mxd-blog-preview__media {
-    height: 460px;
+    height: 400px;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .mxd-blog-preview__media {
-    height: 600px;
+    height: auto;
   }
 }
 
@@ -22262,7 +22262,7 @@ form textarea:required:valid {
 
 @media only screen and (min-width: 1600px) {
   .mxd-blog-preview__image {
-    height: 600px;
+    height: 480px;
   }
 }
 

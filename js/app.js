@@ -665,7 +665,7 @@ new Ukiyo(images, {
   externalRAF: false,
 });
 new Ukiyo(imagesSmall, {
-  scale: 1.2,
+  scale: 1,
   speed: 1.5,
   externalRAF: false
 });
