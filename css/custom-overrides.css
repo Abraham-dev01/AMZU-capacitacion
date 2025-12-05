@@ -155,3 +155,20 @@
     gap: 20px;
   }
 }
+
+.seccion-title{
+    padding-top: 5rem;
+    padding-bottom: 5rem;
+}
+
+.acerca-inicio{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.acerca-cover{
+    height: 60vh;
+    width: auto;
+}
