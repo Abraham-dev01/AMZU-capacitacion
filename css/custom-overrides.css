@@ -58,7 +58,7 @@
 }
 
 /* Dark mode: make icons white */
-[color-scheme=dark] .mxd-footer-nav__list .footer-social-link {
+[color-scheme="dark"] .mxd-footer-nav__list .footer-social-link {
   color: #fff;
 }
 
@@ -72,7 +72,7 @@
 /* Container for icons */
 .mxd-footer-nav__list .footer-social-list {
   display: flex;
-  gap: .5rem;
+  gap: 0.5rem;
   align-items: center;
 }
 
@@ -80,7 +80,7 @@
 .mxd-footer-nav__list .footer-social-link:hover,
 .mxd-footer-nav__list .footer-social-link:focus {
   transform: translateY(-2px);
-  transition: transform .12s ease, opacity .12s ease;
+  transition: transform 0.12s ease, opacity 0.12s ease;
   opacity: 0.95;
 }
 
@@ -102,7 +102,7 @@
   justify-content: space-between;
   background: #fff;
   border-radius: 15px;
-  box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+  box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   padding: 25px;
   text-align: justify;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
@@ -156,19 +156,43 @@
   }
 }
 
-.seccion-title{
-    padding-top: 5rem;
-    padding-bottom: 5rem;
+.seccion-title {
+  padding-top: 5rem;
+  padding-bottom: 5rem;
 }
 
-.acerca-inicio{
-    height: 70vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+.acerca-inicio {
+  height: 70vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
-.acerca-cover{
-    height: 60vh;
-    width: auto;
+.acerca-cover {
+  height: 60vh;
+  width: auto;
+}
+
+.post-simple__btn a:hover .ph-facebook-logo {
+  color: #1877f2;
+}
+.post-simple__btn a:hover .ph-instagram-logo {
+  color: #e1306c;
+}
+
+.post-simple__btn .btn {
+  width: 48px;
+  height: 48px;
+  border-radius: 50%;
+  padding: 0;
+  align-items: center;
+  justify-content: center;
+}
+
+.post-simple__btn a i {
+  transition: transform 0.25s ease, color 0.25s ease;
+}
+
+.post-simple__btn a:hover i {
+  transform: scale(1.2);
 }
