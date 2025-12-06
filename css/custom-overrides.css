@@ -128,12 +128,15 @@
   display: flex;
   align-items: center;
   font-weight: 600;
-  color: #111;
 }
 
 .mxd-demo-list__link i {
   margin-right: 6px;
-  color: #111;
+}
+
+.mxd-demo-list__link--light,
+.mxd-demo-list__link--light i {
+  color: #111 !important;
 }
 
 /* Texto del párrafo */
