@@ -196,3 +196,17 @@
 .post-simple__btn a:hover i {
   transform: scale(1.2);
 }
+
+.swiper-testimonials {
+  overflow: visible !important;
+}
+
+.swiper-slide {
+  transition: transform 0.3s ease;
+}
+
+.swiper-slide img {
+  width: 100%;
+  border-radius: 10px;
+  transition: all 0.3s ease;
+}
