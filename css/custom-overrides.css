@@ -213,3 +213,117 @@
   border-radius: 10px;
   transition: all 0.3s ease;
 }
+
+@media only screen and (min-width: 400px) {
+  .inicio-img-cover {
+    padding-top: 14rem;
+    height: 78vh;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .inicio-img-cover {
+    padding-top: 20rem;
+    height: 66vh;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .inicio-img-cover {
+    padding-top: 23rem;
+    height: 65vh;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .inicio-img-cover {
+    padding-top: 22rem;
+    height: 65vh;
+    object-fit: cover;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .inicio-img-cover {
+    width: 90%;
+    padding-top: 20rem;
+    height: 71vh;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .inicio-img-cover {
+    width: 90%;
+    padding-top: 20rem;
+    height: 68vh;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .inicio-img-cover {
+    width: 90%;
+    padding-top: 20rem;
+    height: 70vh;
+    object-fit: cover;
+    display: block;
+    margin: 0 auto;
+  }
+}
+
+@media only screen and (min-width: 400px) {
+  .inicio-container {
+    height: 95vh;
+    padding-top: 12rem;
+  }
+}
+
+@media only screen and (min-width: 500px) {
+  .inicio-container {
+    height: 95vh;
+    padding-top: 12rem;
+  }
+}
+
+@media only screen and (min-width: 769px) {
+  .inicio-container {
+    height: 95vh;
+    padding-top: 16rem;
+  }
+}
+
+@media only screen and (min-width: 1000px) {
+  .inicio-container {
+    height: 95vh;
+    padding-top: 15rem;
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .inicio-container {
+    height: 95vh;
+    padding-top: 12rem;
+  }
+}
+
+@media only screen and (min-width: 1400px) {
+  .inicio-container {
+    height: 95vh;
+    padding-top: 10rem;
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .inicio-container {
+    height: 95vh;
+    padding-top: 5rem;
+  }
+}

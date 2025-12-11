@@ -6238,25 +6238,35 @@ form textarea:required:valid {
   right: 1.5rem;
 }
 
+@media only screen and (min-width: 400px) {
+  .mxd-floating-img__item {
+    right: 0;
+    top: 1rem;
+    width: 100%;
+  }
+}
+
 @media only screen and (min-width: 768px) {
   .mxd-floating-img__item {
-    bottom: 4rem;
-    right: 6rem;
-    width: 600px;
-    height: auto;
+    right: 0;
+    top: 1rem;
+    width: 100%;
   }
 }
 
 @media only screen and (min-width: 1400px) {
   .mxd-floating-img__item {
-    width: 46%;
+    right: 0;
+    top: 1rem;
+    width: 100%;
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .mxd-floating-img__item {
-    right: 9rem;
-    width: 40%;
+    right: 0;
+    top: 1rem;
+    width: 100%;
   }
 }
 
