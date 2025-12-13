@@ -344,29 +344,29 @@
 
 @media only screen and (min-width: 500px) {
   .mxd-hero-00__top.marquee {
-    padding-top: none!important;
+    padding-top: none !important;
     /* padding-bottom: 14.8rem; */
   }
 }
 
 @media only screen and (min-width: 768px) {
   .mxd-hero-00__top.marquee {
-    padding-left: 9rem;
-    padding-top: none!important;
+    padding-right: 8.5rem;
+    padding-top: none !important;
     /* padding-bottom: 14.8rem; */
   }
 }
 
 @media only screen and (min-width: 1200px) {
   .mxd-hero-00__top.marquee {
-    padding-left: 14rem;
+    padding-right: 13.5rem;
     /* padding-bottom: 14.8rem; */
   }
 }
 
 @media only screen and (min-width: 1600px) {
   .mxd-hero-00__top.marquee {
-    padding-left: 17rem;
+    padding-right: 15rem;
     /* padding-bottom: 14.8rem; */
   }
 }
@@ -381,21 +381,50 @@
 }
 
 /* Light theme - show black logo */
-[color-scheme=light] .mxd-logo__light {
+[color-scheme="light"] .mxd-logo__light {
   display: inline-block;
 }
 
-[color-scheme=light] .mxd-logo__dark {
+[color-scheme="light"] .mxd-logo__dark {
   display: none;
 }
 
 /* Dark theme - show white logo */
-[color-scheme=dark] .mxd-logo__light {
+[color-scheme="dark"] .mxd-logo__light {
   display: none;
 }
 
-[color-scheme=dark] .mxd-logo__dark {
+[color-scheme="dark"] .mxd-logo__dark {
   display: inline-block;
+}
+
+@media only screen and (min-width: 500px) {
+  .hero-00-title.inicio-title-marquee {
+    padding-top: 0 !important;
+    /* padding-bottom: 14.8rem; */
+  }
+}
+
+@media only screen and (min-width: 768px) {
+  .hero-00-title.inicio-title-marquee {
+    padding-left: 9rem;
+    padding-top: 0 !important;
+    /* padding-bottom: 14.8rem; */
+  }
+}
+
+@media only screen and (min-width: 1200px) {
+  .hero-00-title.inicio-title-marquee {
+    padding-left: 14rem;
+    /* padding-bottom: 14.8rem; */
+  }
+}
+
+@media only screen and (min-width: 1600px) {
+  .hero-00-title.inicio-title-marquee {
+    padding-left: 17rem;
+    /* padding-bottom: 14.8rem; */
+  }
 }
 
 .mxd-demo-footer__item {
@@ -439,3 +468,14 @@
   opacity: 1;
 }
 
+.mxd-hero-00__top.title-section {
+  justify-content: flex-start;
+  padding-left: 15%;
+}
+
+@media only screen and (max-width: 768px) {
+  .mxd-hero-00__top.title-section {
+    justify-content: flex-start;
+    padding-left: 0%;
+  }
+}
