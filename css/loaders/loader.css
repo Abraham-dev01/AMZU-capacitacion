@@ -317,7 +317,7 @@
   top: 0;
   width: 100%;
   height: 100%;
-  background: var(--base);
+  background: #02194b;
   color: var(--t-bright);
   display: -webkit-box;
   display: -moz-box;
@@ -376,7 +376,7 @@
   display: inline-flex;
   font: normal var(--fw-medium) 6rem/0.9 var(--_font-accent);
   letter-spacing: -0.06rem;
-  color: var(--t-bright);
+  color: white;
 }
 @media only screen and (min-width: 768px) {
   .loader__count span {
