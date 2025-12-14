@@ -18,7 +18,8 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
 
   <!-- Template Favicon & Icons Start -->
-  <link rel="icon" href="img/landing/ícono-color.png" type="image/svg+xml">
+  <link rel="icon" href="img/icono-title.png" sizes="any">
+  <link rel="icon" href="img/icono-title.png" type="image/svg+xml">
   <link rel="apple-touch-icon" href="img/favicon/apple-touch-icon.png">
   <link rel="manifest" href="img/favicon/manifest.webmanifest">
   <!-- Template Favicon & Icons End -->
@@ -36,6 +37,7 @@
   <link rel="stylesheet" type="text/css" href="css/loaders/loader.css">
   <link rel="stylesheet" type="text/css" href="css/plugins.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
+  <link rel="stylesheet" type="text/css" href="css/custom-overrides.css">
   <!-- Overrides específicos para móvil -->
   <link rel="stylesheet" type="text/css" href="css/overrides-mobile.css">
   <!-- Template Styles End -->
@@ -103,28 +105,144 @@
   </div>
   <!-- Loader End -->
 
+  <!-- Menu & Menu Hamburger Start -->
+  <nav class="mxd-nav__wrap" data-lenis-prevent="">
+
+    <!-- Hamburger Start -->
+    <div class="mxd-nav__contain loading__fade">
+      <a href="#0" class="mxd-nav__hamburger">
+        <!-- flip element -->
+        <div class="hamburger__base"></div>
+        <div class="hamburger__line"></div>
+        <div class="hamburger__line"></div>
+      </a>
+    </div>
+    <!-- Hamburger End -->
+
+    <!-- Main Navigation Start -->
+    <div class="mxd-menu__wrapper">
+      <!-- background active layer -->
+      <div class="mxd-menu__base"></div>
+      <!-- menu container -->
+      <div class="mxd-menu__contain">
+        <div class="mxd-menu__inner">
+          <!-- left side -->
+          <div class="mxd-menu__left">
+            <p class="mxd-menu__caption menu-fade-in">Conoce nuestros servicios y desarrolla al máximo el potencial
+              de tus trabajadores</p>
+            <div class="main-menu">
+              <nav class="main-menu__content">
+                <ul id="main-menu" class="main-menu__accordion">
+                  <li class="main-menu__item">
+                    <div class="main-menu__toggle">
+                      <a class="main-menu__link btn btn-anim" href="index.html" target="_blank">
+                        <span class="btn-caption">Inicio</span>
+                      </a>
+                    </div>
+                  </li>
+                  <!-- <li class="main-menu__item">
+                    <div class="main-menu__toggle">
+                      <a class="main-menu__link btn btn-anim" href="acerca-de-nosotros.html" target="_blank">
+                        <span class="btn-caption">Acerca de nosotros</span>
+                      </a>
+                    </div>
+                  </li> -->
+                  <li class="main-menu__item">
+                    <div class="main-menu__toggle">
+                      <a class="main-menu__link btn btn-anim" href="servicios.html" target="_blank">
+                        <span class="btn-caption">Servicios</span>
+                      </a>
+                    </div>
+                  </li>
+                  <li class="main-menu__item">
+                    <div class="main-menu__toggle">
+                      <a class="main-menu__link btn btn-anim" href="cursos.html" target="_blank">
+                        <span class="btn-caption">Catálogo de cursos</span>
+                      </a>
+                    </div>
+                  </li>
+                  <!-- <li class="main-menu__item">
+                    <a class="main-menu__link btn btn-anim" href="cursos.html" target="_blank">
+                      <span class="btn-caption">Cursos en línea</span>
+                    </a>
+                  </li>
+                  <li class="main-menu__item">
+                    <div class="main-menu__toggle">
+                      <a class="main-menu__link btn btn-anim" href="noticias.html" target="_blank">
+                        <span class="btn-caption">Noticias</span>
+                      </a>
+                      <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" version="1.1" viewBox="0 0 20 20">
+                        <path
+                          d="M19.6,9.6h-3.9c-.4,0-1.8-.2-1.8-.2-.6,0-1.1-.2-1.6-.6-.5-.3-.9-.8-1.2-1.2-.3-.4-.4-.9-.5-1.4,0,0,0-1.1-.2-1.5V.4c0-.2-.2-.4-.4-.4s-.4.2-.4.4v4.4c0,.4-.2,1.5-.2,1.5,0,.5-.2,1-.5,1.4-.3.5-.7.9-1.2,1.2s-1,.5-1.6.6c0,0-1.2,0-1.7.2H.4c-.2,0-.4.2-.4.4s.2.4.4.4h4.1c.4,0,1.7.2,1.7.2.6,0,1.1.2,1.6.6.4.3.8.7,1.1,1.1.3.5.5,1,.6,1.6,0,0,0,1.3.2,1.7v4.1c0,.2.2.4.4.4s.4-.2.4-.4v-4.1c0-.4.2-1.7.2-1.7,0-.6.2-1.1.6-1.6.3-.4.7-.8,1.1-1.1.5-.3,1-.5,1.6-.6,0,0,1.3,0,1.8-.2h3.9c.2,0,.4-.2.4-.4s-.2-.4-.4-.4h0Z" />
+                      </svg>
+                    </div>
+                    <ul class="submenu">
+                      <li class="submenu__item">
+                        <a href="blog.html" target="_blank">Blog</a>
+                      </li>
+                      <li class="submenu__item">
+                        <a href="eventos.html" target="_blank">Eventos</a>
+                      </li>
+                    </ul>
+                  </li> -->
+                  <li class="main-menu__item">
+                    <a class="main-menu__link btn btn-anim" href="contacto.html" target="_blank">
+                      <span class="btn-caption">Contacto</span>
+                    </a>
+                  </li>
+                </ul>
+              </nav>
+            </div>
+          </div>
+          <!-- right side -->
+          <div class="mxd-menu__right">
+            <div class="menu-promo">
+              <div class="menu-promo__content">
+                <p class="menu-promo__caption menu-fade-in">AMZU Capacitación<br>Asesoría y formación de personal.</p>
+                <div class="menu-promo__video">
+                  <img class="menu-video" src="img/menu/menu-cover.jpeg" alt="Promoción del menú">
+                </div>
+
+              </div>
+            </div>
+          </div>
+          <!-- data bottom line -->
+          <div class="mxd-menu__data menu-fade-in">
+            <p class="t-xsmall">
+              <a class="no-effect" href="https://amzucapacitacion.com/" target="_blank">AMZU Capacitación</a>
+            </p>
+            <p class="t-xsmall">
+              <i class="ph ph-copyright"></i>
+              2025
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Main Navigation End -->
+
+  </nav>
+  <!-- Menu & Menu Hamburger End -->
+
   <!-- Header Start -->
   <header id="header" class="mxd-header">
     <!-- header logo -->
     <div class="mxd-header__logo loading__fade">
-      <a href="index-main.html" class="mxd-logo">
-        <!-- logo image - dark theme (white logo) -->
-        <img src="img/landing/logo blanco idw.png" alt="International Doorway Logo"
-          class="mxd-logo__image mxd-logo__dark" style="height: 50px; width: auto;">
-        <!-- logo image - light theme (black logo) -->
-        <img src="img/landing/logo color idw.png" alt="International Doorway Logo"
-          class="mxd-logo__image mxd-logo__light" style="height: 50px; width: auto;">
+      <a href="index.html" target="_blank" class="mxd-logo">
+        <!-- logo icon -->
+        <img src="img/header/AMZU-Header-logo.png" alt="Logo AMZU" class="mxd-logo__image mxd-logo__light">
+        <img src="img/header/AMZU-Header-logo-dark.png" alt="Logo AMZU" class="mxd-logo__image mxd-logo__dark">
+        <!-- logo text -->
       </a>
     </div>
     <!-- header controls -->
     <div class="mxd-header__controls loading__fade">
       <button id="color-switcher" class="mxd-color-switcher" type="button" role="switch" aria-label="light/dark mode"
         aria-checked="true"></button>
-      <a class="btn btn-default"
-        href="https://wa.me/524422584688?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20International%20Doorway%20M%C3%A9xico"
-        target="_blank" aria-label="WhatsApp">
-        <img src="img/landing/whatsapp-logo.svg" alt="WhatsApp"
-          style="height:40px;width:40px;display:inline-block;vertical-align:middle;">
+      <a class="btn btn-anim btn-default btn-mobile-icon btn-outline slide-right" href="contacto.html" target="_blank"
+        style="margin-right: 10rem;" target="_blank">
+        <span class="btn-caption">Solicitar cotización</span>
+        <i class="ph-bold ph-shopping-cart-simple"></i>
       </a>
     </div>
   </header>
@@ -152,21 +270,20 @@
               <!-- Inner Headline Name Start -->
 
               <!-- Inner Headline Content Start -->
-              <div class="col-12 col-xl-8 mxd-grid-item no-margin">
+              <div class="col-12 col-xl-12 mxd-grid-item no-margin">
 
                 <div class="mxd-block__content">
                   <div class="mxd-block__inner-headline loading__item">
-                    <h1 class="inner-headline__title">
-                      International Doorway México<br>
-                    </h1>
+                    <div class="mxd-demo-components__title anim-uni-in-up" style="justify-content: flex-start;">
+                      <span class="">CONTÁCTANOS</span>
+                    </div>
                     <p align="justify" class="inner-headline__text t-large t-bright loading__item">¿Tienes dudas sobre
-                      estudiar en
-                      Estados Unidos?
-                      En International Doorway México te orientamos sobre becas, requisitos y el proceso para aplicar a
-                      universidades norteamericanas.
-                      Aquí encontrarás información clara sobre nuestros servicios y cómo podemos ayudarte a lograr tu
-                      sueño académico internacional.
-                      Si necesitas más detalles, contáctanos y te asesoramos personalmente.</p>
+                      nuestras capacitaciones o necesitas una cotización personalizada?
+                      En AMZU Capacitaciones estamos listos para orientarte y brindarte toda la
+                      información que necesites sobre nuestros cursos, certificaciones y servicios empresariales.
+                      Ya sea que quieras conocer los costos, los temas que manejamos o los requisitos para capacitar a
+                      tu personal, contáctanos y con gusto resolveremos tus preguntas.
+                      Nuestro equipo está aquí para apoyarte en cada paso del proceso.</p>
                   </div>
                 </div>
 
@@ -398,202 +515,128 @@
   </main>
   <!-- Page Content End -->
 
-  <!-- Footer Start -->
-  <footer id="mxd-footer" class="mxd-footer">
+  <!-- Footer Demo Start -->
+  <footer class="mxd-demo-footer">
 
-    <!-- Footer Block - Fullwidth Text Start -->
-    <div class="mxd-footer__text-wrap">
-      <div class="fullwidth-text__tl-trigger"></div>
-      <div class="mxd-footer__fullwidth-text personal anim-top-to-bottom">
-        <svg class="mxd-footer__svg-v2 idw-logo-text" version="1.1" xmlns="http://www.w3.org/2000/svg"
-          xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 600 100"
-          style="enable-background:new 0 0 600 100; padding-bottom: 11rem;" xml:space="preserve">
-          <style>
-            .idw-text {
-              font-family: 'Funnel Display', sans-serif;
-              font-weight: 700;
-              font-size: 30px;
-              letter-spacing: 0.1em;
-              fill: var(--color-text-base);
-            }
-
-            /* Modo claro */
-            [color-scheme="light"] .idw-text {
-              fill: #161616;
-            }
-
-            /* Modo oscuro */
-            [color-scheme="dark"] .idw-text {
-              fill: #FAF7F6;
-            }
-
-            /* Media queries para modo automático */
-            @media (prefers-color-scheme: light) {
-              .idw-text {
-                fill: #161616;
-              }
-            }
-
-            @media (prefers-color-scheme: dark) {
-              .idw-text {
-                fill: #FAF7F6;
-              }
-            }
-          </style>
-          <text class="idw-text" x="50%" y="15" text-anchor="middle" dominant-baseline="middle">INTERNATIONAL</text>
-          <text class="idw-text" x="50%" y="50" text-anchor="middle" dominant-baseline="middle">DOORWAY</text>
-        </svg>
-      </div>
+    <!-- Footer Background Start -->
+    <div class="mxd-demo-footer__bg">
+      <img src="img/demo/01-footer.webp" alt="Rayo Image">
     </div>
-    <!-- Footer Block - Fullwidth Text End -->
+    <!-- Footer Background End -->
 
-    <!-- Footer Block - Info Columns Start -->
-    <div class="mxd-footer__footer-blocks">
-      <!-- single column -->
-      <div class="footer-blocks__column animate-card-3">
-        <!-- inner card -->
-        <div class="footer-blocks__card fullheight-card">
-          <!-- footer navigation -->
-          <div class="footer-blocks__nav">
-            <ul class="footer-nav">
-              <span class="footer-nav__link">Directorio</span>
-              <br>
-              <li class="footer-nav__item anim-uni-in-up footer-dir-item" style="margin-bottom: 1.5rem;">
-                <a href="#nuestro-modelo" class="footer-nav__link footer-dir-link">
-                  <div class="mxd-hero__mark">
-                    <span class="mark-icon"></span>
-                    <span class="footer-dir-text">Nuestro modelo</span>
-                  </div>
+    <!-- Footer Container Start -->
+    <div class="mxd-container grid-container" style="padding-bottom: 5rem;">
+
+      <!-- Footer Block - Content Block Start -->
+      <div class="mxd-block">
+        <div class="container-fluid p-0">
+          <div class="row g-0">
+            <div class="col-12 col-xl-4 mxd-demo-footer__item mxd-grid-item">
+              <div class="mxd-header__logo loading__fade">
+                <a href="index.html" target="_blank" class="mxd-logo">
+                  <!-- logo icon -->
+                  <img src="img/header/AMZU-Header-logo.png" alt="Logo AMZU" class="mxd-logo__image mxd-logo__light">
+                  <img src="img/header/AMZU-Header-logo-dark.png" alt="Logo AMZU"
+                    class="mxd-logo__image mxd-logo__dark">
+                  <!-- logo text -->
                 </a>
-              </li>
-              <li class="footer-nav__item anim-uni-in-up footer-dir-item" style="margin-bottom: 1.2rem;">
-                <a href="#beneficios" class="footer-nav__link footer-dir-link">
-                  <div class="mxd-hero__mark">
-                    <span class="mark-icon"></span>
-                    <span class="footer-dir-text">Beneficios</span>
-                  </div>
-                </a>
-              </li>
-              <li class="footer-nav__item anim-uni-in-up footer-dir-item" style="margin-bottom: 1.2rem;">
-                <a href="#modalidad-presencial" class="footer-nav__link footer-dir-link">
-                  <div class="mxd-hero__mark">
-                    <span class="mark-icon"></span>
-                    <span class="footer-dir-text">Modalidad presencial</span>
-                  </div>
-                </a>
-              </li>
-              <li class="footer-nav__item anim-uni-in-up footer-dir-item" style="margin-bottom: 1.2rem;">
-                <a href="#modalidad-en-linea" class="footer-nav__link footer-dir-link">
-                  <div class="mxd-hero__mark">
-                    <span class="mark-icon"></span>
-                    <span class="footer-dir-text">Modalidad en línea</span>
-                  </div>
-                </a>
-              </li>
-              <li class="footer-nav__item anim-uni-in-up footer-dir-item" style="margin-bottom: 1.2rem;">
-                <a href="#testimonios-info" class="footer-nav__link footer-dir-link">
-                  <div class="mxd-hero__mark">
-                    <span class="mark-icon"></span>
-                    <span class="footer-dir-text">Testimonios</span>
-                  </div>
-                </a>
-              </li>
-              <li class="footer-nav__item anim-uni-in-up footer-dir-item" style="margin-bottom: 1.2rem;">
-                <a href="#preguntas-frecuentes" class="footer-nav__link footer-dir-link">
-                  <div class="mxd-hero__mark">
-                    <span class="mark-icon"></span>
-                    <span class="footer-dir-text">Preguntas frecuentes</span>
-                  </div>
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
-      </div>
-      <!-- single column -->
-      <div class="footer-blocks__column animate-card-3">
-        <!-- inner card -->
-        <div class="footer-blocks__card">
-          <p class="mxd-point-subtitle anim-uni-in-up">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 24 24" fill="currentColor">
-              <path
-                d="M20 4H4c-1.1 0-2 .9-2 2v12c0 1.1.9 2 2 2h16c1.1 0 2-.9 2-2V6c0-1.1-.9-2-2-2zm0 2v.01L12 13 4 6.01V6h16zm0 12H4V8l8 7 8-7v10z" />
-            </svg>
-            <a href="mailto:idoorwaymexico@gmail.com?subject=Solicitud%20de%20informaci%C3%B3n&body=%C2%A1Hola!%20Me%20gustar%C3%ADa%20recibir%20m%C3%A1s%20informaci%C3%B3n%20sobre%20su%20oferta%20educativa."
-              target="_blank" rel="noopener">idoorwaymexico@gmail.com</a>
-          </p>
-        </div>
-        <!-- inner card -->
-        <div class="footer-blocks__card">
-          <p class="mxd-point-subtitle anim-uni-in-up">
-            <svg xmlns="http://www.w3.org/2000/svg" width="20px" height="20px" viewBox="0 0 32 32" fill="currentColor"
-              style="margin-left:8px;">
-              <path
-                d="M16 3C9.373 3 4 8.373 4 15c0 2.385.668 4.617 1.934 6.594L4 29l7.594-1.934A12.96 12.96 0 0 0 16 27c6.627 0 12-5.373 12-12S22.627 3 16 3zm0 22c-2.09 0-4.13-.547-5.922-1.582l-.422-.242-4.516 1.15 1.15-4.516-.242-.422A9.96 9.96 0 0 1 6 15c0-5.514 4.486-10 10-10s10 4.486 10 10-4.486 10-10 10zm5.297-7.297c-.297-.148-1.758-.867-2.031-.967-.273-.099-.47-.148-.668.148-.198.297-.767.967-.94 1.165-.173.198-.347.223-.644.074-.297-.148-1.255-.463-2.39-1.477-.883-.788-1.48-1.761-1.653-2.059-.173-.297-.018-.457.13-.605.134-.133.298-.347.446-.52.149-.174.198-.298.298-.497.099-.198.05-.372-.025-.52-.074-.148-.668-1.612-.915-2.207-.242-.583-.487-.504-.668-.513l-.57-.011c-.198 0-.52.074-.792.372-.272.297-1.04 1.016-1.04 2.477s1.065 2.876 1.213 3.078c.148.198 2.099 3.205 5.082 4.367.711.306 1.264.489 1.697.625.713.227 1.362.195 1.875.118.572-.085 1.758-.719 2.007-1.413.248-.694.248-1.288.173-1.413-.074-.124-.272-.198-.57-.347z" />
-            </svg>
-            <a href="https://wa.me/524422584688?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20International%20Doorway%20M%C3%A9xico"
-              target="_blank" rel="noopener">442-258-46-88</a>
-          </p>
-        </div>
-        <!-- inner card -->
-        <div class="footer-blocks__card fill-card notify">
-          <!-- card title -->
-          <div class="footer-blocks__title anim-uni-in-up">
-            <p class="footer-blocks__title-m">Agenda una cita</p>
-          </div>
-          <!-- subscribe form container -->
-          <div class="form-container anim-uni-in-up">
-            <!-- subscribe form -->
-            <form class="form notify-form form-light">
-              <p align="justify">Contamos con un equipo de expertos que te ayudarán a seleccionar la mejor opción
-                educativa, <a href="/Template/HTML/contact.html" target="_blank" rel="noopener">haz click aquí</a> para
-                ponerte en
-                contacto con nosotros.
-              </p>
-            </form>
-          </div>
-        </div>
-      </div>
-      <!-- single column -->
-      <div class="footer-blocks__column animate-card-3">
-        <!-- inner card -->
-        <div class="footer-blocks__card fullheight-card">
-          <!-- nav block -->
-          <div class="footer-blocks__block">
-            <!-- card title -->
-            <div class="footer-blocks__title anim-uni-in-up">
-              <p class="footer-blocks__title-l">Ubicación de la oficina en México:</p>
+              </div>
+              <div class="mxd-demo-footer__slogan anim-uni-in-up">
+                <br>
+                <p class="t-small t-bright">Estamos aquí para asesorarte y ayudarte a crecer tus habilidades.</p>
+              </div>
+              <div class="mxd-footer-nav__title anim-uni-in-up">
+                <p class="t-140 t-bright t-caption">Visita nuestras redes:</p>
+              </div>
+              <div class="mxd-footer-nav__list">
+                <div class="footer-social-list">
+                  <a href="https://www.facebook.com/amzucapa" target="_blank" rel="noopener" aria-label="Facebook"
+                    class="footer-social-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                      <title>Facebook</title>
+                      <path fill="currentColor"
+                        d="M22 12c0-5.523-4.477-10-10-10S2 6.477 2 12c0 4.991 3.657 9.128 8.438 9.88v-6.99H8.898v-2.89h1.54V9.412c0-1.523.9-2.36 2.28-2.36.66 0 1.35.12 1.35.12v1.48h-.76c-.75 0-.98.47-.98.95v1.14h1.67l-.27 2.89h-1.4v6.99C18.343 21.128 22 16.991 22 12z" />
+                    </svg>
+                  </a>
+                  <a href="https://www.linkedin.com/in/amzu-capacitaci%C3%B3n-38bb9083/" target="_blank" rel="noopener"
+                    aria-label="LinkedIn" class="footer-social-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                      <title>LinkedIn</title>
+                      <path fill="currentColor"
+                        d="M20.447 20.452h-3.554v-5.569c0-1.328-.024-3.036-1.849-3.036-1.85 0-2.135 1.445-2.135 2.94v5.665H8.352V9h3.413v1.561h.049c.476-.9 1.637-1.849 3.368-1.849 3.6 0 4.266 2.369 4.266 5.456v6.284zM5.337 7.433c-1.144 0-2.07-.928-2.07-2.071 0-1.143.926-2.071 2.07-2.071s2.07.928 2.07 2.071c0 1.143-.926 2.071-2.07 2.071zM6.978 20.452H3.696V9h3.282v11.452z" />
+                    </svg>
+                  </a>
+                  <a href="https://www.youtube.com/channel/UCxFQQl2lUWPZ_TyxaPUuvBw" target="_blank" rel="noopener"
+                    aria-label="YouTube" class="footer-social-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                      <title>YouTube</title>
+                      <path fill="currentColor"
+                        d="M23.498 6.186a2.998 2.998 0 0 0-2.11-2.12C19.5 3.5 12 3.5 12 3.5s-7.5 0-9.388.567A2.998 2.998 0 0 0 .5 6.186C0 8.125 0 12 0 12s0 3.875.5 5.814a2.998 2.998 0 0 0 2.112 2.12C4.5 20.5 12 20.5 12 20.5s7.5 0 9.388-.566a2.998 2.998 0 0 0 2.11-2.12C24 15.875 24 12 24 12s0-3.875-.502-5.814zM9.75 15.02V8.98L15.5 12l-5.75 3.02z" />
+                    </svg>
+                  </a>
+                  <a href="https://www.instagram.com/amzucapacitacion/" target="_blank" rel="noopener"
+                    aria-label="Instagram" class="footer-social-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                      <title>Instagram</title>
+                      <path fill="none" stroke="currentColor" stroke-width="1.6"
+                        d="M7 2h10a5 5 0 0 1 5 5v10a5 5 0 0 1-5 5H7a5 5 0 0 1-5-5V7a5 5 0 0 1 5-5z" />
+                      <circle cx="12" cy="12" r="3" fill="currentColor" />
+                    </svg>
+                  </a>
+                  <a href="https://twitter.com/AmzuCapacita/" target="_blank" rel="noopener" aria-label="Twitter"
+                    class="footer-social-link">
+                    <svg width="20" height="20" viewBox="0 0 24 24" aria-hidden="true" focusable="false">
+                      <title>Twitter</title>
+                      <path fill="currentColor"
+                        d="M23 3a10.9 10.9 0 0 1-3.14 1.53A4.48 4.48 0 0 0 22.43.36a9.06 9.06 0 0 1-2.88 1.1A4.52 4.52 0 0 0 12 4.77a12.83 12.83 0 0 1-9.29-4.7 4.48 4.48 0 0 0 1.4 6.03 4.41 4.41 0 0 1-2.05-.57v.06a4.52 4.52 0 0 0 3.62 4.43 4.52 4.52 0 0 1-2.04.08 4.53 4.53 0 0 0 4.22 3.14A9.05 9.05 0 0 1 1 19.54 12.8 12.8 0 0 0 7 21c8.29 0 12.84-6.87 12.84-12.84v-.58A9.22 9.22 0 0 0 23 3z" />
+                    </svg>
+                  </a>
+                </div>
+              </div>
             </div>
-            <!-- footer socials -->
-            <div class="footer-blocks__socials">
-              <ul class="footer-socials">
-                <br><br>
-                <p>4+200 del Libramiento Sur Pte, 76904 Los Olvera. Querétaro, Qro. México.</p>
-                <br><br>
-                <p><a href="https://maps.app.goo.gl/udzRwyFQHzpNBHRM9" target="_blank" rel="noopener">Cómo llegar</a>
-                </p>
+            <div class="col-12 col-xl-4 mxd-demo-footer__item mxd-grid-item">
+              <nav class="mxd-demo-footer__nav">
+                <div class="mxd-footer-promo__title anim-uni-in-up">
+                  <p class="t-140 t-bright t-caption">Tu crecimiento comienza aquí:</p>
+                </div>
+                <div class="mxd-footer-promo__list">
+                  <a class="mxd-footer-promo__item" href="https://maps.app.goo.gl/J12jsnDEAagZqKFQ6" target="_blank">
+                    <span class="mxd-footer-promo__link anim-uni-in-up">- Hacienda Ajuchitlán 306, Jardines de la
+                      Hacienda, 76180 Santiago de Querétaro, Qro.</span>
+                  </a>
+                </div>
+              </nav>
+            </div>
+            <div class="col-12 col-xl-4 mxd-demo-footer__item mxd-grid-item">
+              <div class="mxd-demo-footer__promo">
+                <div class="mxd-footer-promo__title anim-uni-in-up">
+                  <p class="t-140 t-bright t-caption">Contáctanos:</p>
+                </div>
+                <div class="mxd-footer-promo__list">
+                  <a class="mxd-footer-promo__item" href="" target="_blank">
+                    <span class="mxd-footer-promo__link anim-uni-in-up">- Mail: direccion@amzucapacitacion.com</span>
+                  </a>
+                  <a class="mxd-footer-promo__item" href="https://wa.me/524411202520" target="_blank">
+                    <span class="mxd-footer-promo__link anim-uni-in-up">- Teléfono: 441 120 25 20</span>
+                  </a>
+                </div>
+              </div>
             </div>
           </div>
-          <!-- links -->
-          <div class="footer-blocks__links anim-uni-in-up">
-            <p class="t-xsmall t-muted">
-              International Doorway
-              <i class="ph-bold ph-copyright"></i>
-              2025
-            </p>
-          </div>
         </div>
       </div>
+      <!-- Footer Block - Content Block End -->
+
     </div>
-    <!-- Footer Block - Info Columns End -->
+    <!-- Footer Container End -->
 
   </footer>
-  <!-- Footer End -->
+  <!-- Footer Demo End -->
 
   <!-- WhatsApp Button Start -->
   <a href="https://wa.me/524422584688?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20International%20Doorway%20M%C3%A9xico"
     id="whatsapp-fixed" class="btn btn-whatsapp-fixed slide-up anim-no-delay" target="_blank" aria-label="WhatsApp">
-    <img src="img/landing/whatsapp-logo.svg" alt="WhatsApp"
+    <img src="img/inicio/whatsapp.svg" alt="WhatsApp"
       style="height:50px;width:50px;display:inline-block;vertical-align:middle;">
   </a>
   <!-- WhatsApp Button End -->
