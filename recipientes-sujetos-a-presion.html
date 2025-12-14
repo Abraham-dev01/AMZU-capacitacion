@@ -406,13 +406,14 @@
       <div class="mxd-block">
         <div class="container-fluid p-0">
           <div class="row g-0">
-            <div class="col-12 col-xl-3 mxd-demo-footer__item mxd-grid-item">
+            <div class="col-12 col-xl-4 mxd-demo-footer__item mxd-grid-item">
               <div class="mxd-header__logo loading__fade">
-                <a href="index-main.html" class="mxd-logo">
+                <a href="index.html" target="_blank" class="mxd-logo">
                   <!-- logo icon -->
-                  <img src="img/header/AMZU-Header-logo.png" alt="Logo AMZU" class="mxd-logo__image">
+                  <img src="img/header/AMZU-Header-logo.png" alt="Logo AMZU" class="mxd-logo__image mxd-logo__light">
+                  <img src="img/header/AMZU-Header-logo-dark.png" alt="Logo AMZU"
+                    class="mxd-logo__image mxd-logo__dark">
                   <!-- logo text -->
-                  <!-- <span class="mxd-logo__text">rayo<br>template</span> -->
                 </a>
               </div>
               <div class="mxd-demo-footer__slogan anim-uni-in-up">
@@ -468,53 +469,8 @@
                 </div>
               </div>
             </div>
-            <div class="col-12 col-xl-4 mxd-demo-footer__item">
+            <div class="col-12 col-xl-4 mxd-demo-footer__item mxd-grid-item">
               <nav class="mxd-demo-footer__nav">
-                <div class="container-fluid p-0">
-                  <div class="row g-0">
-                    <div class="col-12 col-md-6 mxd-grid-item mxd-footer-nav__item">
-                      <div class="mxd-footer-nav__block">
-                        <div class="mxd-footer-nav__title anim-uni-in-up">
-                          <p class="t-140 t-bright t-caption">Explora</p>
-                        </div>
-                        <div class="mxd-footer-nav__list">
-                          <ul>
-                            <li><a class="anim-uni-in-up" href="index-main.html">Acerca de nosotros</a></li>
-                            <li><a class="anim-uni-in-up" href="index-software-development-company.html">Proyectos</a>
-                            </li>
-                            <li><a class="anim-uni-in-up" href="index-freelancer-portfolio.html">Galería</a></li>
-                            <li><a class="anim-uni-in-up" href="index-digital-agency.html">Cotizar</a></li>
-                            <li><a class="anim-uni-in-up" href="index-creative-design-studio.html">Testimoniales</a>
-                            </li>
-                            <li><a class="anim-uni-in-up" href="index-personal-portfolio.html">FAQ</a>
-                            </li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                    <div class="col-12 col-md-6 mxd-grid-item mxd-footer-nav__item">
-                      <div class="mxd-footer-nav__block">
-                        <div class="mxd-footer-nav__title anim-uni-in-up">
-                          <p class="t-140 t-bright t-caption">Menú del sitio</p>
-                        </div>
-                        <div class="mxd-footer-nav__list">
-                          <ul>
-                            <li><a class="anim-uni-in-up" href="works-simple.html">Servicios</a></li>
-                            <li><a class="anim-uni-in-up" href="works-masonry.html">Cursos</a></li>
-                            <li><a class="anim-uni-in-up" href="project-details.html">Blog</a></li>
-                            <li><a class="anim-uni-in-up" href="project-details.html">Contacto</a></li>
-                            <li><a class="anim-uni-in-up" href="project-details.html">Solicitud de servicio</a></li>
-                            <li><a class="anim-uni-in-up" href="project-details.html">Ubicaciones</a></li>
-                          </ul>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
-              </nav>
-            </div>
-            <div class="col-12 col-xl-5 mxd-demo-footer__item mxd-grid-item">
-              <div class="mxd-demo-footer__promo">
                 <div class="mxd-footer-promo__title anim-uni-in-up">
                   <p class="t-140 t-bright t-caption">Tu crecimiento comienza aquí:</p>
                 </div>
@@ -524,6 +480,10 @@
                       Hacienda, 76180 Santiago de Querétaro, Qro.</span>
                   </a>
                 </div>
+              </nav>
+            </div>
+            <div class="col-12 col-xl-4 mxd-demo-footer__item mxd-grid-item">
+              <div class="mxd-demo-footer__promo">
                 <div class="mxd-footer-promo__title anim-uni-in-up">
                   <p class="t-140 t-bright t-caption">Contáctanos:</p>
                 </div>
@@ -553,6 +513,57 @@
     <i class="ph ph-arrow-up"></i>
   </a>
   <!-- To Top Button End -->
+
+  <!-- WhatsApp Button Start -->
+  <a href="https://wa.me/524411202520?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20AMZU%20Capacitaci%C3%B3n"
+    id="whatsapp-fixed" class="btn btn-whatsapp-fixed" target="_blank" aria-label="WhatsApp">
+    <img src="img/inicio/whatsapp.svg" alt="WhatsApp"
+      style="height:50px;width:50px;display:inline-block;vertical-align:middle;">
+  </a>
+  <!-- WhatsApp Button End -->
+
+  <style>
+    .btn-whatsapp-fixed {
+      position: fixed;
+      right: 2.1rem;
+      bottom: 9rem;
+      z-index: 9999;
+      border-radius: 50%;
+      padding: 0.5rem;
+      transition: box-shadow 0.2s;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    .btn-whatsapp-fixed:hover {
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
+    }
+
+    #to-top.btn-to-top {
+      position: fixed;
+      right: 2rem;
+      bottom: 2rem;
+      z-index: 9998;
+    }
+
+    @media (max-width: 600px) {
+      .btn-whatsapp-fixed {
+        right: 0.3rem;
+        bottom: 6rem;
+      }
+
+      .btn-whatsapp-fixed img {
+        height: 32px;
+        width: 32px;
+      }
+
+      #to-top.btn-to-top {
+        right: 1rem;
+        bottom: 1rem;
+      }
+    }
+  </style>
 
   <!-- Load Scripts Start -->
   <script src="js/libs.min.js"></script>
