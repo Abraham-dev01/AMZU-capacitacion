@@ -398,6 +398,14 @@
   display: inline-block;
 }
 
+@media only screen and (max-width: 450px) {
+  .hero-00-title.inicio-title-marquee {
+    padding-top: 0 !important;
+    font-size: 4rem!important;
+    /* padding-bottom: 14.8rem; */
+  }
+}
+
 @media only screen and (min-width: 500px) {
   .hero-00-title.inicio-title-marquee {
     padding-top: 0 !important;
