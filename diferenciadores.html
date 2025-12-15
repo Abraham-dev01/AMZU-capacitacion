@@ -5,10 +5,11 @@
   <meta charset="UTF-8">
 
   <!-- Page Title -->
-  <title>AMZU Capacitación - Desarrollando el potencial</title>
+  <title>Rayo - Digital Agency & Personal Portfolio HTML Template</title>
 
   <!-- Meta Tags -->
-  <meta name="description" content="Estudia en Estados Unidos con International Doorway México.">
+  <meta name="description"
+    content="Elevate your digital presence with Rayo - dynamic and stylish HTML template designed for creative agencies and personal brands. With modern layouts, smooth interactions and a polished aesthetic, Rayo template helps showcase projects, services and expertise with clarity and impact.">
   <meta name="keywords"
     content="mix_design, resume, portfolio, personal page, cv, template, one page, responsive, html5, css3, creative, clean">
   <meta name="author" content="mix_design">
@@ -27,8 +28,9 @@
   <!-- Facebook Metadata Start -->
   <meta property="og:image:height" content="1200">
   <meta property="og:image:width" content="1200">
-  <meta property="og:title" content="International Doorway México">
-  <meta property="og:description" content="Estudia en Estados Unidos con International Doorway México.">
+  <meta property="og:title" content="Rayo - Digital Agency & Personal Portfolio HTML Template">
+  <meta property="og:description"
+    content="Elevate your digital presence with Rayo - dynamic and stylish HTML template designed for creative agencies and personal brands. With modern layouts, smooth interactions and a polished aesthetic, Rayo template helps showcase projects, services and expertise with clarity and impact.">
   <meta property="og:url" content="https://mixdesign.dev/themeforest/rayo">
   <meta property="og:image" content="https://mixdesign.dev/themeforest/rayo/img/og-image.jpg">
   <!-- Facebook Metadata End -->
@@ -38,26 +40,7 @@
   <link rel="stylesheet" type="text/css" href="css/plugins.css">
   <link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" type="text/css" href="css/custom-overrides.css">
-  <!-- Overrides específicos para móvil -->
-  <link rel="stylesheet" type="text/css" href="css/overrides-mobile.css">
   <!-- Template Styles End -->
-
-  <!-- Override botones solo escritorio -->
-  <style id="desktop-only-css">
-    /* Oculta cualquier elemento marcado con .desktop-only en pantallas móviles y tablets hasta 1199px */
-    @media (max-width: 1201px) {
-      .desktop-only {
-        display: none !important;
-      }
-    }
-
-    /* Asegura visibilidad en escritorio */
-    @media (min-width: 1200px) {
-      .desktop-only {
-        display: flex !important;
-      }
-    }
-  </style>
 
   <!-- Custom Browser Color Start -->
   <meta name="theme-color" media="(prefers-color-scheme: light)" content="#FAF7F6">
@@ -79,27 +62,6 @@
           <span class="count__text">0</span>
           <span class="count__percent">%</span>
         </div>
-        <script>
-          window.addEventListener('scroll', function () {
-            var svgLogo = document.querySelector('.idw-logo-text');
-            if (!svgLogo) return;
-            var footer = document.getElementById('mxd-footer');
-            var rect = footer.getBoundingClientRect();
-            if (rect.top < window.innerHeight - 200) {
-              svgLogo.style.opacity = 1;
-            } else {
-              svgLogo.style.opacity = 0;
-            }
-          });
-          // Transición suave para el logo del footer
-          window.addEventListener('DOMContentLoaded', function () {
-            var svgLogo = document.querySelector('.idw-logo-text');
-            if (svgLogo) {
-              svgLogo.style.transition = 'opacity 1.2s cubic-bezier(0.4,0,0.2,1)';
-              svgLogo.style.opacity = 0;
-            }
-          });
-        </script>
       </div>
     </div>
   </div>
@@ -252,7 +214,7 @@
   <main id="mxd-page-content" class="mxd-page-content inner-page-content">
 
     <!-- Section - Inner Page Headline Start -->
-    <div class="mxd-section mxd-section-inner-headline padding-s-text-pre-form overflow-hidden">
+    <div class="mxd-section mxd-section-inner-headline padding-s-text-pre-block">
       <div class="mxd-container grid-container">
 
         <!-- Block - Inner Page Headline Start -->
@@ -260,30 +222,18 @@
           <div class="container-fluid px-0">
             <div class="row gx-0">
 
-              <!-- Inner Headline Name Start -->
-              <div class="col-12 col-xl-2 mxd-grid-item no-margin">
-                <div class="mxd-block__name name-inner-headline">
-                  <p class="mxd-point-subtitle">
-                  </p>
-                </div>
-              </div>
-              <!-- Inner Headline Name Start -->
-
               <!-- Inner Headline Content Start -->
-              <div class="col-12 col-xl-12 mxd-grid-item no-margin">
+              <div class="col-12 col-xl-8 mxd-grid-item no-margin">
 
-                <div class="mxd-block__content">
-                  <div class="mxd-block__inner-headline loading__item">
-                    <div class="mxd-demo-components__title anim-uni-in-up" style="justify-content: flex-start;">
-                      <span class="">CONTÁCTANOS</span>
-                    </div>
-                    <p align="justify" class="inner-headline__text t-large t-bright loading__item">¿Tienes dudas sobre
-                      nuestras capacitaciones o necesitas una cotización personalizada?
-                      En AMZU Capacitaciones estamos listos para orientarte y brindarte toda la
-                      información que necesites sobre nuestros cursos, certificaciones y servicios empresariales.
-                      Ya sea que quieras conocer los costos, los temas que manejamos o los requisitos para capacitar a
-                      tu personal, contáctanos y con gusto resolveremos tus preguntas.
-                      Nuestro equipo está aquí para apoyarte en cada paso del proceso.</p>
+                <div class="mxd-block__content" id="preguntas-frecuentes">
+                  <div class="mxd-block__inner-headline"
+                    style="display: flex; flex-direction: column; align-items: center; justify-content: flex-start; height: 100%;">
+                    <h1 style="margin-bottom: 0; padding-top: 2.5rem; text-align: center;">Diferenciadores y beneficios
+                    </h1>
+                    <p class="inner-headline__text t-large t-bright loading__item" style="text-align: center;">¿Tienes
+                      alguna otra duda? <a
+                        href="https://wa.me/524411202520?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20AMZU%20Capacitaci%C3%B3n"
+                        target="_blank" rel="noopener">¡Contáctanos!</a></p>
                   </div>
                 </div>
 
@@ -299,7 +249,7 @@
     </div>
     <!-- Section - Inner Page Headline End -->
 
-    <!-- Section - Inner Page Form Start -->
+    <!-- Section - Inner Page Headline Start -->
     <div class="mxd-section mxd-section-inner-form padding-default">
       <div class="mxd-container grid-container">
 
@@ -313,189 +263,130 @@
               <!-- Inner Headline Name Start -->
 
               <!-- Inner Headline Content Start -->
-              <div class="col-12 col-xl-8">
+              <div class="col-12 col-xl-8 mxd-grid-item no-margin">
 
-                <div class="mxd-block__content contact">
-                  <div class="mxd-block__inner-form loading__fade">
-                    <div class="form-container">
-
-                      <!-- Reply Messages Start -->
-                      <div class="form__reply centered text-center">
-                        <i class="ph-fill ph-smiley-wink reply__icon"></i>
-                        <p class="reply__title">¡Datos enviados!</p>
-                        <span class="reply__text">Nos comunicaremos contigo pronto para darte información sobre la
-                          sesión informativa.</span>
-                      </div>
-                      <!-- Reply Messages End -->
-
-                      <!-- Contact Form Start -->
-                      <form class="form contact-form" id="contact-form"
-                        action="https://script.google.com/macros/s/AKfycby8C3oF4XcyyQjzAVg8L01Keb2Cpoh6B6NrrOmPKEk4CkeahcoDoiUfJHs5avSBsLrr/exec"
-                        method="POST">
-                        <!-- Campos requeridos ocultos -->
-                        <input type="hidden" name="project_name" value="International Doorway México">
-                        <input type="hidden" name="admin_email" value="idw.mexico@internationaldoorway.mx">
-                        <input type="hidden" name="admin_email" value="idoorwaymexico@gmail.com">
-                        <input type="hidden" name="form_subject" value="Mensaje de formulario de contacto">
-                        <!-- Fin campos requeridos ocultos -->
-                        <div class="container-fluid p-0">
-                          <div class="row gx-0">
-                            <div class="col-12 col-md-6 mxd-grid-item anim-uni-in-up">
-                              <input type="text" name="Nombre" placeholder="Tu nombre*" required>
-                            </div>
-                            <div class="col-12 col-md-6 mxd-grid-item anim-uni-in-up">
-                              <input type="text" name="Institución" placeholder="Escuela o institución">
-                            </div>
-                            <div class="col-12 col-md-6 mxd-grid-item anim-uni-in-up">
-                              <input type="email" name="Correo" placeholder="Correo electrónico*" required>
-                            </div>
-                            <div class="col-12 col-md-6 mxd-grid-item anim-uni-in-up">
-                              <input type="tel" name="Teléfono" placeholder="Teléfono">
-                            </div>
-                            <div class="col-12 mxd-grid-item anim-uni-in-up">
-                              <textarea name="Intereses" placeholder="Cuéntanos sobre tu interés académico o deportivo*"
-                                required></textarea>
-                            </div>
-                            <div class="col-12 mxd-grid-item anim-uni-in-up">
-                              <div style="display: flex; align-items: center;">
-                                <button class="btn btn-anim btn-default btn-large btn-opposite slide-right-up"
-                                  type="submit">
-                                  <span class="btn-caption">Enviar</span>
-                                  <i class="ph-bold ph-arrow-up-right"></i>
-                                </button>
-                                <span id="form-success-msg"
-                                  style="display:none; margin-left:2rem; color:#DDF160; font-weight:500;">Recibimos tus
-                                  datos, en breve serás contactado para agendar una reunión informativa.</span>
-                              </div>
-                            </div>
-                          </div>
+                <div class="mxd-block__content">
+                  <div class="mxd-accordion loading__fade">
+                    <!-- accordion single item -->
+                    <div class="mxd-accordion__item">
+                      <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                      <div class="mxd-accordion__title anim-uni-in-up">
+                        <h6>¿Y SI EL PERSONAL SE VA DESPUÉS DE CAPACITARSE?</h6>
+                        <div class="mxd-accordion__arrow">
+                          <i class="ph ph-plus"></i>
                         </div>
-                      </form>
-                      <script>
-                        document.addEventListener('DOMContentLoaded', function () {
-                          var form = document.getElementById('contact-form');
-                          var successMsg = document.getElementById('form-success-msg');
-                          var replyBox = document.querySelector('.form__reply');
-                          replyBox.style.display = 'none';
-
-                          // Validación en tiempo real para Nombre
-                          var nombre = form.querySelector('input[name="Nombre"]');
-                          nombre.addEventListener('input', function (e) {
-                            var valor = nombre.value;
-                            if (/[^A-Za-zÁÉÍÓÚáéíóúÑñ\s]/.test(valor)) {
-                              nombre.value = valor.replace(/[^A-Za-zÁÉÍÓÚáéíóúÑñ\s]/g, '');
-                              replyBox.querySelector('.reply__title').textContent = 'Solo letras permitidas';
-                              replyBox.querySelector('.reply__text').textContent = 'No puedes ingresar números ni símbolos en el nombre.';
-                              replyBox.style.display = 'block';
-                            } else {
-                              replyBox.style.display = 'none';
-                            }
-                          });
-
-                          // Validación en tiempo real para Institución
-                          var institucion = form.querySelector('input[name="Institución"]');
-                          institucion.addEventListener('input', function (e) {
-                            var valor = institucion.value;
-                            // Permitir letras, números y espacios, bloquear símbolos especiales
-                            if (/[^A-Za-zÁÉÍÓÚáéíóúÑñ0-9\s]/.test(valor)) {
-                              institucion.value = valor.replace(/[^A-Za-zÁÉÍÓÚáéíóúÑñ0-9\s]/g, '');
-                              replyBox.querySelector('.reply__title').textContent = 'Caracteres inválidos';
-                              replyBox.querySelector('.reply__text').textContent = 'Solo puedes ingresar letras, números y espacios en la institución.';
-                              replyBox.style.display = 'block';
-                            } else {
-                              replyBox.style.display = 'none';
-                            }
-                          });
-
-                          // Validación en tiempo real para Correo
-                          var correo = form.querySelector('input[name="Correo"]');
-                          correo.addEventListener('input', function (e) {
-                            var valor = correo.value;
-                            // Permitir solo caracteres válidos para email
-                            if (/[^A-Za-z0-9@._\-]/.test(valor)) {
-                              correo.value = valor.replace(/[^A-Za-z0-9@._\-]/g, '');
-                              replyBox.querySelector('.reply__title').textContent = 'Caracteres inválidos';
-                              replyBox.querySelector('.reply__text').textContent = 'Solo puedes ingresar letras, números y los símbolos @ . _ -';
-                              replyBox.style.display = 'block';
-                            } else {
-                              replyBox.style.display = 'none';
-                            }
-                          });
-
-                          // Validación en tiempo real para Teléfono
-                          var telefono = form.querySelector('input[name="Teléfono"]');
-                          telefono.addEventListener('input', function (e) {
-                            var valor = telefono.value;
-                            // Permitir solo dígitos, espacios, paréntesis, guiones y símbolo +
-                            if (/[^0-9\s\-()+]/.test(valor)) {
-                              telefono.value = valor.replace(/[^0-9\s\-()+]/g, '');
-                              replyBox.querySelector('.reply__title').textContent = 'Caracteres inválidos';
-                              replyBox.querySelector('.reply__text').textContent = 'Solo puedes ingresar números, espacios, paréntesis, guiones y el símbolo +.';
-                              replyBox.style.display = 'block';
-                            } else {
-                              replyBox.style.display = 'none';
-                            }
-                          });
-
-                          form.addEventListener('submit', function (e) {
-                            e.preventDefault();
-                            replyBox.style.display = 'none';
-                            successMsg.style.display = 'none';
-                            var nombreVal = nombre.value.trim();
-                            var institucionVal = institucion.value.trim();
-                            var correoVal = correo.value.trim();
-                            var correoRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
-
-                            if (!nombreVal) {
-                              replyBox.querySelector('.reply__title').textContent = 'Campo obligatorio';
-                              replyBox.querySelector('.reply__text').textContent = 'El nombre es obligatorio.';
-                              replyBox.style.display = 'block';
-                              nombre.focus();
-                              return;
-                            }
-                            if (!institucionVal) {
-                              replyBox.querySelector('.reply__title').textContent = 'Campo obligatorio';
-                              replyBox.querySelector('.reply__text').textContent = 'La institución es obligatoria.';
-                              replyBox.style.display = 'block';
-                              institucion.focus();
-                              return;
-                            }
-                            if (!correoRegex.test(correoVal)) {
-                              replyBox.querySelector('.reply__title').textContent = 'Error en el correo';
-                              replyBox.querySelector('.reply__text').textContent = 'Por favor ingresa un correo electrónico válido.';
-                              replyBox.style.display = 'block';
-                              correo.focus();
-                              return;
-                            }
-
-                            var formData = new FormData(form);
-                            fetch(form.action, {
-                              method: 'POST',
-                              body: formData
-                            })
-                              .then(function (response) {
-                                return response.text();
-                              })
-                              .then(function (text) {
-                                if (text.trim() === 'OK') {
-                                  successMsg.style.display = 'inline-block';
-                                  form.reset();
-                                } else {
-                                  replyBox.querySelector('.reply__title').textContent = 'Error';
-                                  replyBox.querySelector('.reply__text').textContent = 'No se pudo enviar. Intenta de nuevo.';
-                                  replyBox.style.display = 'block';
-                                }
-                              })
-                              .catch(function () {
-                                replyBox.querySelector('.reply__title').textContent = 'Error';
-                                replyBox.querySelector('.reply__text').textContent = 'No se pudo enviar. Intenta de nuevo.';
-                                replyBox.style.display = 'block';
-                              });
-                          });
-                        });
-                      </script>
-                      <!-- Contact Form End -->
-
+                      </div>
+                      <div class="mxd-accordion__content">
+                        <p align="justify" class="mxd-accordion__text">Somos los únicos en todo México que ofrecemos una
+                          garantía para proteger tu inversión: si un colaborador se separa dentro de los primeros 3
+                          meses, capacitamos sin costo a su nuevo ingreso. Continuidad y tranquilidad para su empresa.
+                          (Aplican términos y condiciones).
+                        </p>
+                      </div>
+                      <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                    </div>
+                    <!-- accordion single item -->
+                    <div class="mxd-accordion__item">
+                      <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                      <div class="mxd-accordion__title anim-uni-in-up">
+                        <h6>CAPACITACIÓN CON REALIDAD INMERSIVA</h6>
+                        <div class="mxd-accordion__arrow">
+                          <i class="ph ph-plus"></i>
+                        </div>
+                      </div>
+                      <div class="mxd-accordion__content">
+                        <p align="justify" class="mxd-accordion__text">Viva una nueva forma de capacitar: experiencias
+                          virtuales realistas donde sus participantes practican, resuelven y deciden en entornos
+                          simulados que impulsan la retención del conocimiento, fortalecen la seguridad y elevan la
+                          efectividad del entrenamiento.
+                        </p>
+                      </div>
+                      <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                    </div>
+                    <!-- accordion single item -->
+                    <div class="mxd-accordion__item">
+                      <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                      <div class="mxd-accordion__title anim-uni-in-up">
+                        <h6>GAMIFICACIÓN</h6>
+                        <div class="mxd-accordion__arrow">
+                          <i class="ph ph-plus"></i>
+                        </div>
+                      </div>
+                      <div class="mxd-accordion__content">
+                        <p align="justify" class="mxd-accordion__text">Cursos en línea que incorporan elementos de juego
+                          como puntos, retos y recompensas para motivar la participación, aumentar el compromiso y
+                          mejorar el aprendizaje, haciendo que la experiencia de capacitación sea más dinámica,
+                          interactiva y efectiva.
+                        </p>
+                      </div>
+                      <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                    </div>
+                    <!-- accordion single item -->
+                    <div class="mxd-accordion__item">
+                      <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                      <div class="mxd-accordion__title anim-uni-in-up">
+                        <h6>RESPUESTA INMEDIATA</h6>
+                        <div class="mxd-accordion__arrow">
+                          <i class="ph ph-plus"></i>
+                        </div>
+                      </div>
+                      <div class="mxd-accordion__content">
+                        <p align="justify" class="mxd-accordion__text">Atención rápida y eficiente ante cualquier
+                          solicitud, brindando soluciones ágiles en cotizaciones, inscripciones o dudas sobre cursos.
+                        </p>
+                      </div>
+                      <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                    </div>
+                    <!-- accordion single item -->
+                    <div class="mxd-accordion__item">
+                      <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                      <div class="mxd-accordion__title anim-uni-in-up">
+                        <h6>ENTREGAS URGENTES</h6>
+                        <div class="mxd-accordion__arrow">
+                          <i class="ph ph-plus"></i>
+                        </div>
+                      </div>
+                      <div class="mxd-accordion__content">
+                        <p align="justify" class="mxd-accordion__text">
+                          Proporcionamos documentos, constancias y reportes de capacitación de forma rápida y eficiente,
+                          asegurando que tu empresa cumpla en tiempo con sus requerimientos y auditorías.
+                        </p>
+                      </div>
+                      <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                    </div>
+                    <!-- accordion single item -->
+                    <div class="mxd-accordion__item">
+                      <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                      <div class="mxd-accordion__title anim-uni-in-up">
+                        <h6>COTIZACIONES CON TARIFA DINÁMICA</h6>
+                        <div class="mxd-accordion__arrow">
+                          <i class="ph ph-plus"></i>
+                        </div>
+                      </div>
+                      <div class="mxd-accordion__content">
+                        <p align="justify" class="mxd-accordion__text">Adaptadas a las necesidades, número de
+                          participantes y modalidad del curso, garantizando siempre la mejor relación costo-beneficio
+                          para tu empresa.
+                        </p>
+                      </div>
+                      <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                    </div>
+                    <!-- accordion single item -->
+                    <div class="mxd-accordion__item">
+                      <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                      <div class="mxd-accordion__title anim-uni-in-up">
+                        <h6>POSIBILIDAD DE ARMAR TU PROPIA COTIZACIÓN</h6>
+                        <div class="mxd-accordion__arrow">
+                          <i class="ph ph-plus"></i>
+                        </div>
+                      </div>
+                      <div class="mxd-accordion__content">
+                        <p align="justify" class="mxd-accordion__text">Puedes seleccionar los cursos, modalidades y
+                          servicios adicionales que mejor se adapten a tus necesidades, obteniendo una propuesta
+                          personalizada al instante.
+                        </p>
+                      </div>
+                      <div class="mxd-accordion__divider anim-uni-in-up"></div>
                     </div>
                   </div>
                 </div>
@@ -510,16 +401,7 @@
 
       </div>
     </div>
-    <!-- Section - Inner Page Form End -->
-
-    <div class="mxd-section mxd-section-inner-form padding-default">
-      <div class="mxd-container grid-container">
-        <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3735.4156118932447!2d-100.4139307!3d20.5710782!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x85d34497aaaaaaab%3A0xf071fefc45c3afe2!2sAMZU%20Capacitaci%C3%B3n!5e0!3m2!1ses-419!2smx!4v1762291031692!5m2!1ses-419!2smx"
-          width="100%" height="450" style="border:0;" allowfullscreen="" loading="lazy"
-          referrerpolicy="no-referrer-when-downgrade"></iframe>
-      </div>
-    </div>
+    <!-- Section - Inner Page Headline End -->
 
   </main>
   <!-- Page Content End -->
@@ -642,42 +524,36 @@
   </footer>
   <!-- Footer Demo End -->
 
-  <!-- WhatsApp Button Start -->
-  <a href="https://wa.me/524411202520?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20AMZU%20Capacitaci%C3%B3n"
-    id="whatsapp-fixed" class="btn btn-whatsapp-fixed slide-up anim-no-delay" target="_blank" aria-label="WhatsApp">
-    <img src="img/inicio/whatsapp.svg" alt="WhatsApp"
-      style="height:50px;width:50px;display:inline-block;vertical-align:middle;">
-  </a>
-  <!-- WhatsApp Button End -->
   <!-- To Top Button Start -->
   <a href="#0" id="to-top" class="btn btn-to-top slide-up anim-no-delay">
     <i class="ph ph-arrow-up"></i>
   </a>
   <!-- To Top Button End -->
 
-  <!-- Load Scripts Start -->
-  <script src="js/libs.min.js"></script>
-  <script src="js/app.js"></script>
-  <!-- Load Scripts End -->
+  <!-- WhatsApp Button Start -->
+  <a href="https://wa.me/524411202520?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20AMZU%20Capacitaci%C3%B3n"
+    id="whatsapp-fixed" class="btn btn-whatsapp-fixed" target="_blank" aria-label="WhatsApp">
+    <img src="img/inicio/whatsapp.svg" alt="WhatsApp"
+      style="height:50px;width:50px;display:inline-block;vertical-align:middle;">
+  </a>
+  <!-- WhatsApp Button End -->
 
   <style>
     .btn-whatsapp-fixed {
       position: fixed;
-      right: 2.6rem;
-      bottom: 9.5rem;
+      right: 2.1rem;
+      bottom: 9rem;
       z-index: 9999;
-      background: none !important;
-      border: none;
-      box-shadow: none;
-      padding: 0;
-      transition: none;
+      border-radius: 50%;
+      padding: 0.5rem;
+      transition: box-shadow 0.2s;
       display: flex;
       align-items: center;
       justify-content: center;
     }
 
     .btn-whatsapp-fixed:hover {
-      box-shadow: none;
+      box-shadow: 0 4px 16px rgba(0, 0, 0, 0.18);
     }
 
     #to-top.btn-to-top {
@@ -685,20 +561,12 @@
       right: 2rem;
       bottom: 2rem;
       z-index: 9998;
-      background: none !important;
-      border: none;
-      box-shadow: none;
-      padding: 0;
-      transition: none;
-      display: flex;
-      align-items: center;
-      justify-content: center;
     }
 
     @media (max-width: 600px) {
       .btn-whatsapp-fixed {
-        right: 0.8rem;
-        bottom: 6.5rem;
+        right: 0.3rem;
+        bottom: 6rem;
       }
 
       .btn-whatsapp-fixed img {
@@ -712,6 +580,11 @@
       }
     }
   </style>
+
+  <!-- Load Scripts Start -->
+  <script src="js/libs.min.js"></script>
+  <script src="js/app.js"></script>
+  <!-- Load Scripts End -->
 
 </body>
 
