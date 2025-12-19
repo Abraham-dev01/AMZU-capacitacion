@@ -401,7 +401,7 @@
 @media only screen and (max-width: 450px) {
   .hero-00-title.inicio-title-marquee {
     padding-top: 0 !important;
-    font-size: 4rem!important;
+    font-size: 4rem !important;
     /* padding-bottom: 14.8rem; */
   }
 }
@@ -432,6 +432,12 @@
   .hero-00-title.inicio-title-marquee {
     padding-left: 17rem;
     /* padding-bottom: 14.8rem; */
+  }
+}
+
+@media only screen and (max-width: 773px) {
+  .mxd-demo-components__title.title-contacto {
+    padding-top: 7rem !important;
   }
 }
 
@@ -486,4 +492,8 @@
     justify-content: flex-start;
     padding-left: 0%;
   }
+}
+
+.color-texto-inicio {
+  color: #1d86a6 !important;
 }

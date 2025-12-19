@@ -19266,14 +19266,25 @@ form textarea:required:valid {
   }
 
   .mxd-services-cards__image.mxd-services-cards-image-2 {
-    width: 380px;
-    left: 50%;
+    width: 280px;
+    left: 70%;
     right: auto;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    bottom: -220px;
+    bottom: -10px;
+  }
+
+  .mxd-services-cards__image.mxd-services-cards-image-2-2 {
+    width: 280px;
+    left: 75%;
+    right: auto;
+    -webkit-transform: translateX(-50%);
+    -moz-transform: translateX(-50%);
+    -ms-transform: translateX(-50%);
+    transform: translateX(-50%);
+    bottom: -10px;
   }
 
   .mxd-services-cards__image.mxd-services-cards-image-3 {
@@ -19322,14 +19333,14 @@ form textarea:required:valid {
   }
 
   .mxd-services-cards__image.mxd-services-cards-image-2 {
-    width: 580px;
-    left: 50%;
+    width: 320px;
+    left: 80%;
     right: auto;
     -webkit-transform: translateX(-50%);
     -moz-transform: translateX(-50%);
     -ms-transform: translateX(-50%);
     transform: translateX(-50%);
-    bottom: -300px;
+    bottom: 0px;
   }
 
   .mxd-services-cards__image.mxd-services-cards-image-3 .image-1 {
