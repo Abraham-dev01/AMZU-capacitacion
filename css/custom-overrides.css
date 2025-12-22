@@ -435,6 +435,12 @@
   }
 }
 
+/* @media only screen and (min-width: 200px) {
+  .mxd-demo-components__title.title-contacto {
+    padding-top: 10rem !important;
+  }
+} */
+
 @media only screen and (max-width: 773px) {
   .mxd-demo-components__title.title-contacto {
     padding-top: 7rem !important;
@@ -496,4 +502,44 @@
 
 .color-texto-inicio {
   color: #1d86a6 !important;
+}
+
+@media only screen and (max-width: 440px) {
+  #mxd-page-content > div.mxd-section.overflow-hidden.padding-pre-title > div > div > div > div > div > div.col-12.col-xl-7.mxd-services-cards__item.mxd-grid-item.anim-uni-scale-in-right {
+    padding: 0 !important;
+  }
+  #mxd-page-content > div.mxd-section.overflow-hidden.padding-pre-title > div > div > div > div > div > div.col-12.col-xl-5.mxd-services-cards__item.mxd-grid-item.anim-uni-scale-in-left {
+    padding: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 578px) {
+  .mxd-grid-item.no-margin .mxd-section-title__controls .btn {
+    /* Escala todo el botón */
+    transform: scale(1);
+    transform-origin: center;
+    /* Suaviza la transición */
+    transition: transform 0.3s ease;
+  }
+
+  /* Ajustar el tamaño del texto */
+  .mxd-grid-item.no-margin .mxd-section-title__controls .btn-caption {
+    font-size: 1.2rem;
+  }
+
+  /* Ajustar el tamaño del ícono */
+  .mxd-grid-item.no-margin .mxd-section-title__controls .btn i {
+    font-size: 1.2rem;
+  }
+}
+
+
+@media only screen and (max-width: 768px) {
+  .mxd-project-item__promo {
+    padding: 0!important;
+  }
+
+  .mxd-project-item__promo p{
+    font-size: medium!important;
+  }
 }
