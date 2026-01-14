@@ -505,11 +505,45 @@
 }
 
 @media only screen and (max-width: 440px) {
-  #mxd-page-content > div.mxd-section.overflow-hidden.padding-pre-title > div > div > div > div > div > div.col-12.col-xl-7.mxd-services-cards__item.mxd-grid-item.anim-uni-scale-in-right {
+  #mxd-page-content
+    > div.mxd-section.overflow-hidden.padding-pre-title
+    > div
+    > div
+    > div
+    > div
+    > div
+    > div.col-12.col-xl-7.mxd-services-cards__item.mxd-grid-item.anim-uni-scale-in-right {
     padding: 0 !important;
   }
-  #mxd-page-content > div.mxd-section.overflow-hidden.padding-pre-title > div > div > div > div > div > div.col-12.col-xl-5.mxd-services-cards__item.mxd-grid-item.anim-uni-scale-in-left {
+  #mxd-page-content
+    > div.mxd-section.overflow-hidden.padding-pre-title
+    > div
+    > div
+    > div
+    > div
+    > div
+    > div.col-12.col-xl-5.mxd-services-cards__item.mxd-grid-item.anim-uni-scale-in-left {
     padding: 0 !important;
+  }
+}
+
+@media only screen and (max-width: 500px) {
+  .container,
+  .container-fluid,
+  .container-xxl,
+  .container-xl,
+  .container-lg,
+  .container-md,
+  .container-sm {
+    --bs-gutter-x: 1.5rem;
+    --bs-gutter-y: 0;
+    width: 95%;
+    padding-right: -moz-calc(var(--bs-gutter-x) * 0.5);
+    padding-right: calc(var(--bs-gutter-x) * 0.5);
+    padding-left: -moz-calc(var(--bs-gutter-x) * 0.5);
+    padding-left: calc(var(--bs-gutter-x) * 0.5);
+    margin-right: auto;
+    margin-left: auto;
   }
 }
 
@@ -533,13 +567,38 @@
   }
 }
 
-
 @media only screen and (max-width: 768px) {
   .mxd-project-item__promo {
-    padding: 0!important;
+    padding: 0 !important;
   }
 
-  .mxd-project-item__promo p{
-    font-size: medium!important;
+  .mxd-project-item__promo p {
+    font-size: medium !important;
   }
+}
+
+.mxd-hero-08__wrap {
+  position: relative;
+  background-image: url("../img/inicio-cover.jpg"); /* ruta de la imagen de fondo */
+  background-size: cover; /* que cubra todo */
+  background-position: center;
+  background-repeat: no-repeat;
+  height: 100vh; /* ocupa todo el alto visible */
+  width: 100%;
+}
+
+.btn-yellow {
+  background-color: #ecaf2a;
+  color: #000;
+  border: none;
+  transition: background-color 0.3s ease;
+}
+
+.btn-yellow .btn-caption,
+.btn-yellow i {
+  color: #000;
+}
+
+.btn-yellow:hover {
+  background-color: #f5c94f;
 }
