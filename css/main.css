@@ -721,6 +721,40 @@ html {
   -moz-osx-font-smoothing: grayscale;
 }
 
+/* Modo claro por defecto - Inicio */
+html {
+  color-scheme: light;
+  background-color: #ffffff;
+  color: #111111;
+}
+
+.mxd-logo__light {
+  display: inline-block;
+}
+
+.mxd-logo__dark {
+  display: none;
+}
+
+/* Modo oscuro (solo si el usuario lo tiene activo en su sistema) */
+@media (prefers-color-scheme: light) {
+  html {
+    color-scheme: light;
+    background-color: #fafafa;
+    color: #000000;
+  }
+
+  .mxd-logo__light {
+    display: none;
+  }
+
+  .mxd-logo__dark {
+    display: inline-block;
+  }
+}
+
+/* Modo claro por defecto - Fin */
+
 body {
   position: relative;
   width: 100%;
@@ -5074,7 +5108,7 @@ form textarea:required:valid {
 }
 
 /* Fallback for system preference when no manual theme is set */
-@media (prefers-color-scheme: light) {
+/* @media (prefers-color-scheme: light) {
   .mxd-logo__light {
     display: inline-block;
   }
@@ -5092,7 +5126,7 @@ form textarea:required:valid {
   .mxd-logo__dark {
     display: inline-block;
   }
-}
+} */
 
 /* Process Arrow Theme Switching Styles */
 .process-arrow-container {

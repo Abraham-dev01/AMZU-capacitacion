@@ -450,7 +450,7 @@
 .mxd-demo-footer__item {
   display: flex;
   flex-direction: column;
-  justify-content: center;
+  justify-content: start;
 }
 
 .mxd-blog-preview__media {
@@ -579,7 +579,7 @@
 
 .mxd-hero-08__wrap {
   position: relative;
-  background-image: url("../img/inicio-cover.jpg"); /* ruta de la imagen de fondo */
+  background-image: url("../img/inicio-cover.jpeg"); /* ruta de la imagen de fondo */
   background-size: cover; /* que cubra todo */
   background-position: center;
   background-repeat: no-repeat;
