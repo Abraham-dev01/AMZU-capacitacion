@@ -1325,10 +1325,10 @@ const initMarquee = () => {
       let master = gsap
         .timeline()
         //.add(marquee(marqueeObject.el, 20, dirFromLeft), 0);
-        .add(marqueeRight(marqueeObject.el, 30, dirFromRight), 0);
+        .add(marqueeRight(marqueeObject.el, 50, dirFromRight), 0);
       let tween = gsap.to(master, {
-        duration: 1.5,
-        timeScale: 1,
+        duration: 0.5,
+        timeScale: 0.4,
         paused: true
       });
       let timeScaleClamp = gsap.utils.clamp(1, 6);
@@ -1336,7 +1336,7 @@ const initMarquee = () => {
         start: 0,
         end: "max",
         onUpdate: (self) => {
-          master.timeScale(timeScaleClamp(Math.abs(self.getVelocity() / 200)));
+          master.timeScale(timeScaleClamp(Math.abs(self.getVelocity() / 600)));
           tween.invalidate().restart();
         }
       });

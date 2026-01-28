@@ -466,16 +466,74 @@
                 <div class="mxd-footer-promo__title anim-uni-in-up">
                   <p class="t-140 t-bright t-caption">Contáctanos:</p>
                 </div>
+
                 <div class="mxd-footer-promo__list">
-                  <a class="mxd-footer-promo__item" href="" target="_blank">
-                    <span class="mxd-footer-promo__link anim-uni-in-up">- Mail: direccion@amzucapacitacion.com</span>
-                  </a>
-                  <a class="mxd-footer-promo__item" href="https://wa.me/524411202520" target="_blank">
-                    <span class="mxd-footer-promo__link anim-uni-in-up">- Teléfono: 441 120 25 20</span>
-                  </a>
+                  <span class="mxd-footer-promo__item">
+                    <b>- Mail:</b><br>
+                  </span>
+                  <span class="mxd-footer-promo__item">
+                    <span class="mxd-footer-promo__link anim-uni-in-up">
+                      <a class="mail-footer"
+                        href="mailto:gerenciaventas@amzucapacitacion.com">gerenciaventas@amzucapacitacion.com</a><br>
+                      <a class="mail-footer"
+                        href="mailto:auxiliar@amzucapacitacion.com">auxiliar@amzucapacitacion.com</a>
+                    </span>
+                  </span>
+
+                  <span class="mxd-footer-promo__item">
+                    <b>- Teléfonos:</b><br>
+                  </span>
+                  <span class="mxd-footer-promo__item">
+                    <span class="mxd-footer-promo__link anim-uni-in-up">
+                      <span class="phone-static" data-phone="+524412953643">441 295 3643</span> <br>
+                      <a href="#" class="phone-link phone-whatsapp" data-phone="+524427878079">442 787 8079</a>
+                    </span>
+                  </span>
                 </div>
               </div>
             </div>
+
+            <script>
+              const isMobile = /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(navigator.userAgent);
+
+              // 📱 En móviles → ambos números abren la app del teléfono
+              document.querySelectorAll("[data-phone]").forEach(el => {
+                el.addEventListener("click", e => {
+                  const phone = e.currentTarget.getAttribute("data-phone");
+                  if (isMobile) {
+                    window.location.href = `tel:${phone}`;
+                  } else if (e.currentTarget.classList.contains("phone-whatsapp")) {
+                    // 💻 En escritorio → solo el segundo abre WhatsApp Web
+                    e.preventDefault();
+                    const cleanPhone = phone.replace("+", "");
+                    window.open(
+                      `https://wa.me/${cleanPhone}?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20AMZU%20Capacitaci%C3%B3n`,
+                      "_blank"
+                    );
+                  }
+                });
+              });
+            </script>
+
+            <style>
+              .mail-footer {
+                color: inherit;
+                text-decoration: none;
+              }
+
+              .phone-static {
+                color: inherit;
+                cursor: default;
+                text-decoration: none;
+              }
+
+              .phone-link {
+                color: inherit;
+                text-decoration: none;
+                transition: color 0s ease;
+              }
+            </style>
+
           </div>
         </div>
       </div>

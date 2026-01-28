@@ -80,7 +80,9 @@
 .mxd-footer-nav__list .footer-social-link:hover,
 .mxd-footer-nav__list .footer-social-link:focus {
   transform: translateY(-2px);
-  transition: transform 0.12s ease, opacity 0.12s ease;
+  transition:
+    transform 0.12s ease,
+    opacity 0.12s ease;
   opacity: 0.95;
 }
 
@@ -105,7 +107,9 @@
   box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
   padding: 25px;
   text-align: justify;
-  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  transition:
+    transform 0.3s ease,
+    box-shadow 0.3s ease;
   min-width: 320px;
 }
 
@@ -193,7 +197,9 @@
 }
 
 .post-simple__btn a i {
-  transition: transform 0.25s ease, color 0.25s ease;
+  transition:
+    transform 0.25s ease,
+    color 0.25s ease;
 }
 
 .post-simple__btn a:hover i {
@@ -601,4 +607,14 @@
 
 .btn-yellow:hover {
   background-color: #f5c94f;
+}
+
+.success-msg {
+  display: none;
+  margin-left: 2rem;
+  color: #1d86a6;
+  font-weight: 500;
+  flex: 0 0 50%;
+  max-width: 50%;
+  text-wrap: pretty;
 }

@@ -304,42 +304,29 @@
     <!-- Section - Inner Page Form Start -->
     <div class="mxd-section mxd-section-inner-form padding-default">
       <div class="mxd-container grid-container">
-
-        <!-- Block - Inner Page Headline Start -->
         <div class="mxd-block">
           <div class="container-fluid px-0">
             <div class="row gx-0">
 
-              <!-- Inner Headline Name Start -->
               <div class="col-12 col-xl-2 mxd-grid-item no-margin"></div>
-              <!-- Inner Headline Name Start -->
 
-              <!-- Inner Headline Content Start -->
               <div class="col-12 col-xl-8">
-
                 <div class="mxd-block__content contact">
                   <div class="mxd-block__inner-form loading__fade">
                     <div class="form-container">
 
-                      <!-- Reply Messages Start -->
+                      <!-- Mensaje de confirmación -->
                       <div class="form__reply centered text-center">
                         <i class="ph-fill ph-smiley-wink reply__icon"></i>
                         <p class="reply__title">¡Datos enviados!</p>
-                        <span class="reply__text">Nos comunicaremos contigo pronto para darte información sobre la
-                          sesión informativa.</span>
+                        <span class="reply__text">
+                          Nos comunicaremos contigo pronto para darte información sobre la capacitación más adecuada
+                          para ti.
+                        </span>
                       </div>
-                      <!-- Reply Messages End -->
 
-                      <!-- Contact Form Start -->
-                      <form class="form contact-form" id="contact-form"
-                        action="https://script.google.com/macros/s/AKfycby8C3oF4XcyyQjzAVg8L01Keb2Cpoh6B6NrrOmPKEk4CkeahcoDoiUfJHs5avSBsLrr/exec"
-                        method="POST">
-                        <!-- Campos requeridos ocultos -->
-                        <input type="hidden" name="project_name" value="International Doorway México">
-                        <input type="hidden" name="admin_email" value="idw.mexico@internationaldoorway.mx">
-                        <input type="hidden" name="admin_email" value="idoorwaymexico@gmail.com">
-                        <input type="hidden" name="form_subject" value="Mensaje de formulario de contacto">
-                        <!-- Fin campos requeridos ocultos -->
+                      <!-- Formulario -->
+                      <form class="form contact-form" id="contact-form">
                         <div class="container-fluid p-0">
                           <div class="row gx-0">
                             <div class="col-12 col-md-6 mxd-grid-item anim-uni-in-up">
@@ -372,24 +359,38 @@
                                   <span class="btn-caption">Enviar</span>
                                   <i class="ph-bold ph-arrow-up-right"></i>
                                 </button>
-                                <span id="form-success-msg"
-                                  style="display:none; margin-left:2rem; color:#DDF160; font-weight:500;">Recibimos tus
-                                  datos, en breve serás contactado para agendar una reunión informativa.</span>
+                                <span id="form-success-msg" class="success-msg">
+                                  Recibimos tus datos, en breve serás contactado para agendar una reunión informativa.
+                                </span>
                               </div>
                             </div>
                           </div>
                         </div>
                       </form>
+
+                      <!-- Script de envío con EmailJS -->
+                      <script type="text/javascript"
+                        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@4/dist/email.min.js"></script>
+
                       <script>
+                        (function () {
+                          emailjs.init("1pbTwuVmXC92r2hY8"); // 👈 Reemplaza con tu clave pública
+                        })();
+
                         document.addEventListener('DOMContentLoaded', function () {
                           var form = document.getElementById('contact-form');
                           var successMsg = document.getElementById('form-success-msg');
                           var replyBox = document.querySelector('.form__reply');
                           replyBox.style.display = 'none';
 
-                          // Validación en tiempo real para Nombre
+                          // Validaciones (mantén tus mismas reglas)
                           var nombre = form.querySelector('input[name="Nombre"]');
-                          nombre.addEventListener('input', function (e) {
+                          var institucion = form.querySelector('input[name="Institución"]');
+                          var correo = form.querySelector('input[name="Correo"]');
+                          var telefono = form.querySelector('input[name="Teléfono"]');
+
+                          // Validaciones en tiempo real
+                          nombre.addEventListener('input', function () {
                             var valor = nombre.value;
                             if (/[^A-Za-zÁÉÍÓÚáéíóúÑñ\s]/.test(valor)) {
                               nombre.value = valor.replace(/[^A-Za-zÁÉÍÓÚáéíóúÑñ\s]/g, '');
@@ -401,11 +402,8 @@
                             }
                           });
 
-                          // Validación en tiempo real para Institución
-                          var institucion = form.querySelector('input[name="Institución"]');
-                          institucion.addEventListener('input', function (e) {
+                          institucion.addEventListener('input', function () {
                             var valor = institucion.value;
-                            // Permitir letras, números y espacios, bloquear símbolos especiales
                             if (/[^A-Za-zÁÉÍÓÚáéíóúÑñ0-9\s]/.test(valor)) {
                               institucion.value = valor.replace(/[^A-Za-zÁÉÍÓÚáéíóúÑñ0-9\s]/g, '');
                               replyBox.querySelector('.reply__title').textContent = 'Caracteres inválidos';
@@ -416,11 +414,8 @@
                             }
                           });
 
-                          // Validación en tiempo real para Correo
-                          var correo = form.querySelector('input[name="Correo"]');
-                          correo.addEventListener('input', function (e) {
+                          correo.addEventListener('input', function () {
                             var valor = correo.value;
-                            // Permitir solo caracteres válidos para email
                             if (/[^A-Za-z0-9@._\-]/.test(valor)) {
                               correo.value = valor.replace(/[^A-Za-z0-9@._\-]/g, '');
                               replyBox.querySelector('.reply__title').textContent = 'Caracteres inválidos';
@@ -431,11 +426,8 @@
                             }
                           });
 
-                          // Validación en tiempo real para Teléfono
-                          var telefono = form.querySelector('input[name="Teléfono"]');
-                          telefono.addEventListener('input', function (e) {
+                          telefono.addEventListener('input', function () {
                             var valor = telefono.value;
-                            // Permitir solo dígitos, espacios, paréntesis, guiones y símbolo +
                             if (/[^0-9\s\-()+]/.test(valor)) {
                               telefono.value = valor.replace(/[^0-9\s\-()+]/g, '');
                               replyBox.querySelector('.reply__title').textContent = 'Caracteres inválidos';
@@ -446,77 +438,46 @@
                             }
                           });
 
+                          // Envío con EmailJS
                           form.addEventListener('submit', function (e) {
                             e.preventDefault();
                             replyBox.style.display = 'none';
                             successMsg.style.display = 'none';
-                            var nombreVal = nombre.value.trim();
-                            var institucionVal = institucion.value.trim();
-                            var correoVal = correo.value.trim();
-                            var correoRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
-                            if (!nombreVal) {
-                              replyBox.querySelector('.reply__title').textContent = 'Campo obligatorio';
-                              replyBox.querySelector('.reply__text').textContent = 'El nombre es obligatorio.';
-                              replyBox.style.display = 'block';
-                              nombre.focus();
-                              return;
-                            }
-                            if (!institucionVal) {
-                              replyBox.querySelector('.reply__title').textContent = 'Campo obligatorio';
-                              replyBox.querySelector('.reply__text').textContent = 'La institución es obligatoria.';
-                              replyBox.style.display = 'block';
-                              institucion.focus();
-                              return;
-                            }
-                            if (!correoRegex.test(correoVal)) {
-                              replyBox.querySelector('.reply__title').textContent = 'Error en el correo';
-                              replyBox.querySelector('.reply__text').textContent = 'Por favor ingresa un correo electrónico válido.';
-                              replyBox.style.display = 'block';
-                              correo.focus();
-                              return;
-                            }
+                            // Datos del formulario
+                            var formData = {
+                              Nombre: form.querySelector('input[name="Nombre"]').value,
+                              Institución: form.querySelector('input[name="Institución"]').value,
+                              Correo: form.querySelector('input[name="Correo"]').value,
+                              Teléfono: form.querySelector('input[name="Teléfono"]').value,
+                              Ciudad: form.querySelector('input[name="Ciudad"]').value,
+                              Personas: form.querySelector('input[name="Personas"]').value,
+                              Intereses: form.querySelector('textarea[name="Intereses"]').value
+                            };
 
-                            var formData = new FormData(form);
-                            fetch(form.action, {
-                              method: 'POST',
-                              body: formData
-                            })
+                            emailjs.send("service_jo0gx9o", "template_v7uodnw", formData)
                               .then(function (response) {
-                                return response.text();
-                              })
-                              .then(function (text) {
-                                if (text.trim() === 'OK') {
-                                  successMsg.style.display = 'inline-block';
-                                  form.reset();
-                                } else {
-                                  replyBox.querySelector('.reply__title').textContent = 'Error';
-                                  replyBox.querySelector('.reply__text').textContent = 'No se pudo enviar. Intenta de nuevo.';
-                                  replyBox.style.display = 'block';
-                                }
-                              })
-                              .catch(function () {
+                                console.log("✅ Éxito:", response);
+                                successMsg.style.display = 'inline-block';
+                                form.reset();
+                              }, function (error) {
+                                console.error("❌ Error:", error);
                                 replyBox.querySelector('.reply__title').textContent = 'Error';
-                                replyBox.querySelector('.reply__text').textContent = 'No se pudo enviar. Intenta de nuevo.';
+                                replyBox.querySelector('.reply__text').textContent = 'No se pudo enviar el mensaje. Intenta nuevamente.';
                                 replyBox.style.display = 'block';
                               });
                           });
                         });
                       </script>
-                      <!-- Contact Form End -->
 
                     </div>
                   </div>
                 </div>
-
               </div>
-              <!-- Inner Headline Content End -->
 
             </div>
           </div>
         </div>
-        <!-- Block - Inner Page Headline End -->
-
       </div>
     </div>
     <!-- Section - Inner Page Form End -->
@@ -630,16 +591,74 @@
                 <div class="mxd-footer-promo__title anim-uni-in-up">
                   <p class="t-140 t-bright t-caption">Contáctanos:</p>
                 </div>
+
                 <div class="mxd-footer-promo__list">
-                  <a class="mxd-footer-promo__item" href="" target="_blank">
-                    <span class="mxd-footer-promo__link anim-uni-in-up">- Mail: direccion@amzucapacitacion.com</span>
-                  </a>
-                  <a class="mxd-footer-promo__item" href="https://wa.me/524411202520" target="_blank">
-                    <span class="mxd-footer-promo__link anim-uni-in-up">- Teléfono: 441 120 25 20</span>
-                  </a>
+                  <span class="mxd-footer-promo__item">
+                    <b>- Mail:</b><br>
+                  </span>
+                  <span class="mxd-footer-promo__item">
+                    <span class="mxd-footer-promo__link anim-uni-in-up">
+                      <a class="mail-footer"
+                        href="mailto:gerenciaventas@amzucapacitacion.com">gerenciaventas@amzucapacitacion.com</a><br>
+                      <a class="mail-footer"
+                        href="mailto:auxiliar@amzucapacitacion.com">auxiliar@amzucapacitacion.com</a>
+                    </span>
+                  </span>
+
+                  <span class="mxd-footer-promo__item">
+                    <b>- Teléfonos:</b><br>
+                  </span>
+                  <span class="mxd-footer-promo__item">
+                    <span class="mxd-footer-promo__link anim-uni-in-up">
+                      <span class="phone-static" data-phone="+524412953643">441 295 3643</span> <br>
+                      <a href="#" class="phone-link phone-whatsapp" data-phone="+524427878079">442 787 8079</a>
+                    </span>
+                  </span>
                 </div>
               </div>
             </div>
+
+            <script>
+              const isMobile = /Android|iPhone|iPad|iPod|Opera Mini|IEMobile|WPDesktop/i.test(navigator.userAgent);
+
+              // 📱 En móviles → ambos números abren la app del teléfono
+              document.querySelectorAll("[data-phone]").forEach(el => {
+                el.addEventListener("click", e => {
+                  const phone = e.currentTarget.getAttribute("data-phone");
+                  if (isMobile) {
+                    window.location.href = `tel:${phone}`;
+                  } else if (e.currentTarget.classList.contains("phone-whatsapp")) {
+                    // 💻 En escritorio → solo el segundo abre WhatsApp Web
+                    e.preventDefault();
+                    const cleanPhone = phone.replace("+", "");
+                    window.open(
+                      `https://wa.me/${cleanPhone}?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20AMZU%20Capacitaci%C3%B3n`,
+                      "_blank"
+                    );
+                  }
+                });
+              });
+            </script>
+
+            <style>
+              .mail-footer {
+                color: inherit;
+                text-decoration: none;
+              }
+
+              .phone-static {
+                color: inherit;
+                cursor: default;
+                text-decoration: none;
+              }
+
+              .phone-link {
+                color: inherit;
+                text-decoration: none;
+                transition: color 0s ease;
+              }
+            </style>
+
           </div>
         </div>
       </div>
