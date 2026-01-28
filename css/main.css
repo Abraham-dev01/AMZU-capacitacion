@@ -7013,6 +7013,12 @@ form textarea:required:valid {
   }
 }
 
+@media only screen and (min-width: 400px) {
+  .main-menu__link {
+    font-size: 3rem;
+  }
+}
+
 .main-menu__toggle {
   position: relative;
   width: 100%;
