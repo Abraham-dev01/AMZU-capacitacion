@@ -7013,7 +7013,7 @@ form textarea:required:valid {
   }
 }
 
-@media only screen and (min-width: 400px) {
+@media only screen and (max-width: 500px) {
   .main-menu__link {
     font-size: 3rem;
   }
@@ -22127,6 +22127,7 @@ form textarea:required:valid {
 }
 
 .mxd-tech-stack-cards__inner-v2::before {
+  background-color: #91979d!important;
   content: "";
   display: block;
   position: absolute;

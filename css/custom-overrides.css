@@ -618,3 +618,30 @@
   max-width: 50%;
   text-wrap: pretty;
 }
+
+.mxd-tech-stack-cards {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr)!important; /* 3 columnas arriba */
+  gap: 2rem; /* espacio entre los elementos */
+  justify-items: center;
+  align-items: stretch;
+  text-align: justify;
+}
+
+.mxd-tech-stack-cards__item {
+  width: 100%;
+}
+
+/* Responsive: en pantallas pequeñas, 1 por fila */
+@media (max-width: 768px) {
+  .mxd-tech-stack-cards {
+    grid-template-columns: repeat(1, 1fr)!important;
+  }
+}
+
+/* Opcional: en pantallas medianas, 2 por fila */
+@media (min-width: 769px) and (max-width: 1200px) {
+  .mxd-tech-stack-cards {
+    grid-template-columns: repeat(2, 1fr)!important;
+  }
+}
