@@ -192,24 +192,56 @@
   <!-- Menu & Menu Hamburger End -->
 
   <!-- Header Start -->
-  <header id="header" class="mxd-header">
+    <header id="header" class="mxd-header">
     <!-- header logo -->
     <div class="mxd-header__logo loading__fade">
       <a href="index.html" target="_blank" class="mxd-logo">
         <!-- logo icon -->
-        <img src="img/header/AMZU-Header-logo.png" alt="Logo AMZU" class="mxd-logo__image mxd-logo__light">
-        <img src="img/header/AMZU-Header-logo-dark.png" alt="Logo AMZU" class="mxd-logo__image mxd-logo__dark">
+        <img src="img/header/AMZU-Header-logo-dark.png" alt="Logo AMZU" class="mxd-logo__image">
         <!-- logo text -->
       </a>
     </div>
+
+        <!-- Menú visible entre logo y controles - Inicio -->
+    <nav class="main-menu main-menu--inline">
+      <ul class="main-menu__list">
+        <li class="main-menu__item">
+          <a href="index.html" class="main-menu__link btn btn-anim">
+            <span class="btn-caption">Inicio</span>
+          </a>
+        </li>
+        <li class="main-menu__item">
+          <a href="acerca-de-nosotros.html" class="main-menu__link btn btn-anim">
+            <span class="btn-caption">Acerca de nosotros</span>
+          </a>
+        </li>
+        <li class="main-menu__item">
+          <a href="cursos.html" class="main-menu__link btn btn-anim">
+            <span class="btn-caption">Catálogo de cursos</span>
+          </a>
+        </li>
+        <li class="main-menu__item">
+          <a href="servicios.html" class="main-menu__link btn btn-anim">
+            <span class="btn-caption">Servicios</span>
+          </a>
+        </li>
+        <li class="main-menu__item">
+          <a href="contacto.html" class="main-menu__link btn btn-anim">
+            <span class="btn-caption">Contacto</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Menú visible entre logo y controles - Fin -->
+
     <!-- header controls -->
     <div class="mxd-header__controls loading__fade">
       <button id="color-switcher" class="mxd-color-switcher" type="button" role="switch" aria-label="light/dark mode"
-        aria-checked="true"></button>
-      <a class="btn btn-anim btn-default btn-mobile-icon btn-outline slide-right" href="contacto.html" target="_blank"
-        target="_blank">
-        <span class="btn-caption">Solicitar cotización</span>
-        <i class="ph-bold ph-shopping-cart-simple"></i>
+        aria-checked="true" style="color: white!important;"></button>
+      <a class="btn btn-anim btn-default btn-mobile-icon btn-outline slide-right btn-yellow" style="color: #ecaf2a;"
+        href="contacto.html" target="_blank" target="_blank">
+        <span class="btn-caption" style="color: black!important;">Solicitar cotización</span>
+        <i class="ph-bold ph-shopping-cart-simple" style="color: black!important;"></i>
       </a>
     </div>
   </header>
@@ -266,8 +298,7 @@
                 <!-- Texto a la izquierda -->
                 <div class="col-12 col-xl-3">
                   <p class="t-bright t-medium reveal-type" style="text-align: justify; padding: 5rem;">
-                    Cada uno de nuestros cursos de capacitación incluye entrega de DC-3, credencial, diploma,
-                    manual y reporte de competencias.</p>
+                    Cada uno de nuestros cursos incluye entrega de DC3 con validez oficial y diploma del curso.</p>
                 </div>
 
                 <!-- Carrusel a la derecha -->
@@ -372,9 +403,7 @@
                       <img class="parallax-img-small" src="img/inicio/servicio-asesoria.jpg" alt="Blog Preview Image">
                     </div>
                     <div class="mxd-preview-hover">
-                      <p style="margin: 3rem; text-align: justify; color: white;">La acreditación es un curso de
-                        Capacitación teórico – práctico, donde el participante deberá aprobar ambos ejes mediante una
-                        evaluación.</p>
+                      <p style="margin: 3rem; text-align: justify; color: white;">¿Tienes una inspección de la secretaría del trabajo? ¿Necesitas asesoría en materia de seguridad e higiene o requieres cumplir con una NOM? Te llevamos de la mano a dar cumplimiento.</p>
                     </div>
                   </div>
                   <div class="mxd-blog-preview__data" style="text-align: center;">
@@ -401,7 +430,7 @@
             <div class="mxd-demo-cta__btn anim-uni-in-up">
               <span>
                 <a class="btn btn-anim btn-default btn-large btn-additional slide-right"
-                  href="https://amzucapacitacion.com/wp-content/uploads/2021/08/AMZU-Carta-Servicios.pdf"
+                  href="./files/AMZU-Carta-Servicios.pdf"
                   target="_blank">
                   Descargar
                   <i class="ph-bold ph-download"></i>
@@ -628,15 +657,12 @@
     <div class="mxd-section padding-grid-pre-pinned">
       <div class="mxd-container grid-container">
 
-        <!-- Block - Stack Universal Pinned Block with Section Title Start -->
-        <div class="mxd-block">
+        <!-- <div class="mxd-block">
           <div class="mxd-pinned-universal">
             <div class="container-fluid px-0">
               <div class="row gx-0">
                 <div class="col-12 col-xl-7 mxd-pinned-universal__static">
                   <div class="mxd-pinned-universal__static-inner no-margin">
-
-                    <!-- Section Title Start -->
                     <div class="mxd-section-title h2-only no-margin-desktop">
                       <div class="container-fluid p-0">
                         <div class="row g-0">
@@ -648,14 +674,12 @@
                         </div>
                       </div>
                     </div>
-                    <!-- Section Title Start -->
 
                   </div>
                 </div>
                 <div class="col-12 col-xl-5 mxd-pinned-universal__scroll">
                   <div class="mxd-pinned-universal__scroll-inner mxd-grid-item no-margin">
                     <div class="mxd-res-list">
-                      <!-- item -->
                       <div class="mxd-res-list__item">
                         <div class="mxd-res-list__divider anim-uni-in-up"></div>
                         <div class="mxd-res-list__content">
@@ -677,11 +701,9 @@
               </div>
             </div>
           </div>
-        </div>
-        <!-- Block - Stack Universal Pinned Block with Section Title Start -->
+        </div> -->
       </div>
     </div>
-    <!-- Section - Experience End -->
 
   </main>
   <!-- Page Content End -->
@@ -802,7 +824,7 @@
                   </span>
                   <span class="mxd-footer-promo__item">
                     <span class="mxd-footer-promo__link anim-uni-in-up">
-                      <span class="phone-static" data-phone="+524412953643">441 295 3643</span> <br>
+                      <span class="phone-static" data-phone="+524422953643">442 295 3643</span> <br>
                       <a href="#" class="phone-link phone-whatsapp" data-phone="+524427878079">442 787 8079</a>
                     </span>
                   </span>

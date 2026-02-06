@@ -1328,7 +1328,7 @@ const initMarquee = () => {
         .add(marqueeRight(marqueeObject.el, 50, dirFromRight), 0);
       let tween = gsap.to(master, {
         duration: 0.5,
-        timeScale: 0.4,
+        timeScale: 1.5,
         paused: true
       });
       let timeScaleClamp = gsap.utils.clamp(1, 6);
@@ -1339,6 +1339,13 @@ const initMarquee = () => {
           master.timeScale(timeScaleClamp(Math.abs(self.getVelocity() / 600)));
           tween.invalidate().restart();
         }
+      });
+       // ⬅️ Pausar y reanudar en hover
+      itemBlock.addEventListener("mouseenter", () => {
+        master.pause(); // pausa la animación
+      });
+      itemBlock.addEventListener("mouseleave", () => {
+        master.play(); // la reanuda
       });
     });
   }

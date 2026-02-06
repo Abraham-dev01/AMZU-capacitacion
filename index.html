@@ -198,12 +198,45 @@
   <header id="header" class="mxd-header">
     <!-- header logo -->
     <div class="mxd-header__logo loading__fade">
-      <a href="index.html" target="_blank" class="mxd-logo">
+      <a href="index.html" class="mxd-logo">
         <!-- logo icon -->
         <img src="img/header/AMZU-Header-logo-dark.png" alt="Logo AMZU" class="mxd-logo__image">
         <!-- logo text -->
       </a>
     </div>
+
+        <!-- Menú visible entre logo y controles - Inicio -->
+    <nav class="main-menu main-menu--inline">
+      <ul class="main-menu__list">
+        <li class="main-menu__item">
+          <a href="index.html" class="main-menu__link btn btn-anim">
+            <span class="btn-caption header-inicio">Inicio</span>
+          </a>
+        </li>
+        <li class="main-menu__item">
+          <a href="acerca-de-nosotros.html" class="main-menu__link btn btn-anim">
+            <span class="btn-caption header-inicio">Acerca de nosotros</span>
+          </a>
+        </li>
+        <li class="main-menu__item">
+          <a href="cursos.html" class="main-menu__link btn btn-anim">
+            <span class="btn-caption header-inicio">Catálogo de cursos</span>
+          </a>
+        </li>
+        <li class="main-menu__item">
+          <a href="servicios.html" class="main-menu__link btn btn-anim">
+            <span class="btn-caption header-inicio">Servicios</span>
+          </a>
+        </li>
+        <li class="main-menu__item">
+          <a href="contacto.html" class="main-menu__link btn btn-anim">
+            <span class="btn-caption header-inicio">Contacto</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Menú visible entre logo y controles - Fin -->
+
     <!-- header controls -->
     <div class="mxd-header__controls loading__fade">
       <button id="color-switcher" class="mxd-color-switcher" type="button" role="switch" aria-label="light/dark mode"
@@ -238,13 +271,14 @@
                 </div>
               </div>
             </div>
-            <a id="contactButton" class="btn btn-anim btn-default btn-mobile-icon btn-outline slide-right btn-yellow"
-              href="#" target="_blank">
+            <a id="contactButton" class="btn btn-anim btn-default btn-outline slide-right btn-yellow"
+              href="#contact-form" target="_blank">
               <span class="btn-caption" style="color: black!important;">Contáctanos</span>
-              <i class="ph-bold ph-phone" style="color: black!important;"></i>
+              <i class="ph-bold ph-phone"
+                style="color: black!important; border: 2px solid black; border-radius: 50%; padding: 0px; width: 40px; height: 40px; display: inline-flex; align-items: center; justify-content: center;"></i>
             </a>
 
-            <script>
+            <!-- <script>
               document.addEventListener("DOMContentLoaded", function () {
                 const button = document.getElementById("contactButton");
 
@@ -269,7 +303,7 @@
                   }
                 });
               });
-            </script>
+            </script> -->
 
 
           </div>
@@ -284,18 +318,20 @@
                   desarrollar tu potencial.</p>
               </div>
             </div>
-            <div class="mxd-hero-08__video-wrap hero-08-scale-out-scroll loading__item">
-              <video class="mxd-hero-08__video" preload="auto" autoplay="autoplay" loop="loop" muted="muted"
-                poster="img/video-cover.avif">
-              </video>
-              <div class="mxd-hero-08__video-btn">
-                <a id="showreel-trigger"
-                  class="btn btn-round btn-round-medium btn-accent slide-right anim-no-delay showreel-trigger"
-                  href="https://www.youtube.com/watch?v=kqqJFbcc4AI">
-                  <i class="ph-fill ph-play" style="color: white!important;"></i>
-                </a>
+            <a href="https://www.youtube.com/watch?v=kqqJFbcc4AI" target="_blank">
+              <div class="mxd-hero-08__video-wrap hero-08-scale-out-scroll loading__item">
+                <video class="mxd-hero-08__video" preload="auto" autoplay loop muted
+                  poster="img/video-cover.avif"></video>
+                <div class="mxd-hero-08__video-btn">
+                  <a id="showreel-trigger"
+                    class="btn btn-round btn-round-medium btn-accent slide-right anim-no-delay showreel-trigger"
+                    href="https://www.youtube.com/watch?v=kqqJFbcc4AI">
+                    <i class="ph-fill ph-play" style="color: white!important;"></i>
+                  </a>
+                </div>
               </div>
-            </div>
+            </a>
+
           </div>
           <div class="mxd-hero-08__tl-trigger"></div>
         </div>
@@ -303,137 +339,194 @@
     </div>
     <!-- Sección de inicio - Fin -->
 
-    <!-- Carrusel 1 - Inicio -->
+    <!-- Cursos - Inicio -->
+    <div class="mxd-section">
+      <div class="mxd-block">
+        <div class="mxd-section-title pre-grid">
+          <div class="container-fluid p-0">
+
+            <div class="mxd-hero-00__bottom">
+              <div class="hero-00-manifest loading__fade" style="padding-top: 10rem; padding-bottom: 5rem;">
+                <p class="mxd-manifest anim-uni-in-up reveal-type">Estamos aquí para asesorarte y ayudarte a obtener tu DC-3.
+                </p>
+              </div>
+            </div>
+
+            <div>
+              <div class="mxd-demo-components__title anim-uni-in-up">
+                <span class="reveal-type">CURSOS</span>
+              </div>
+            </div>
+
+            <!-- bottom group -->
+            <div class="mxd-hero-00__bottom">
+              <div class="hero-00-manifest loading__fade" style="padding-top: 10rem; padding-bottom: 5rem;">
+                <p class="mxd-manifest anim-uni-in-up reveal-type">Nuestros cursos están enfocados 100% en el
+                  aprovechamiento práctico y teórico combinado para lograr un mejor aprendizaje.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Cursos - Fin -->
+
+    <!-- Catálogo de cursos - Inicio -->
+
     <div class="mxd-block loading__fade">
       <!-- Marquee Divider Start -->
       <div class="marquee marquee-right--gsap">
         <div class="marquee__toright">
 
           <!-- Curso 1 -->
-          <div class="marquee__item one-line item-large image"
+          <div class="marquee__item marquee__link_aux one-line item-large image"
             style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
-            <a class="marquee__link" target="_blank" style="text-decoration:none;">
-              <img src="img/inicio/carrusel-1/1.jpg" style="display:block;">
+            <a class="marquee__link" href="corte-y-soldadura.html" target="_blank" style="text-decoration:none;">
+              <img src="img/cursos/corte-y-soldadura.jpg" alt="Corte y Soldadura" style="display:block;">
             </a>
+            <p href="corte-y-soldadura.html" target="_blank"
+              style="text-decoration:none;margin-top:8px;font-size:larger;font-weight:500;" class="t-small t-bright">
+              Corte y
+              Soldadura</p>
           </div>
 
           <!-- Curso 2 -->
-          <div class="marquee__item one-line item-large image"
+          <div class="marquee__item marquee__link_aux one-line item-large image"
             style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
-            <a class="marquee__link" target="_blank" style="text-decoration:none;">
-              <img src="img/inicio/carrusel-1/2.jpeg" style="display:block;">
+            <a class="marquee__link" href="recipientes-sujetos-a-presion.html" target="_blank"
+              style="text-decoration:none;">
+              <img src="img/cursos/recipientes-sujetos-a-presion.png" alt="Recipientes Sujetos a Presión"
+                style="display:block;">
             </a>
+            <p href="recipientes-sujetos-a-presion.html" target="_blank"
+              style="text-decoration:none;margin-top:8px;font-size:larger;font-weight:500;" class="t-small t-bright">
+              Recipientes
+              Sujetos
+              a Presión</p>
           </div>
 
           <!-- Curso 3 -->
-          <div class="marquee__item one-line item-large image"
+          <div class="marquee__item marquee__link_aux one-line item-large image"
             style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
-            <a class="marquee__link" target="_blank" style="text-decoration:none;">
-              <img src="img/inicio/carrusel-1/3.jpeg" style="display:block;">
+            <a class="marquee__link" href="espacios-confinados.html" target="_blank" style="text-decoration:none;">
+              <img src="img/cursos/espacios-confinados.png" alt="Espacios Confinados" style="display:block;">
             </a>
+            <p href="espacios-confinados.html" target="_blank"
+              style="text-decoration:none;margin-top:8px;font-size:larger;font-weight:500;" class="t-small t-bright">
+              Espacios
+              Confinados</p>
           </div>
 
           <!-- Curso 4 -->
-          <div class="marquee__item one-line item-large image"
+          <div class="marquee__item marquee__link_aux one-line item-large image"
             style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
-            <a class="marquee__link" target="_blank" style="text-decoration:none;">
-              <img src="img/inicio/carrusel-1/4.jpeg" style="display:block;">
+            <a class="marquee__link" href="sistema-armonizado.html" target="_blank" style="text-decoration:none;">
+              <img src="img/cursos/sistema-armonizado.png" alt="Sistema Globalmente Armonizado" style="display:block;">
             </a>
+            <p href="sistema-armonizado.html" target="_blank"
+              style="text-decoration:none;margin-top:8px;font-size:larger;font-weight:500;" class="t-small t-bright">
+              Sistema Globalmente
+              Armonizado</p>
           </div>
 
           <!-- Curso 5 -->
-          <div class="marquee__item one-line item-large image"
+          <div class="marquee__item marquee__link_aux one-line item-large image"
             style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
-            <a class="marquee__link" target="_blank" style="text-decoration:none;">
-              <img src="img/inicio/carrusel-1/5.jpeg" style="display:block;">
+            <a class="marquee__link" href="grua-viajera.html" target="_blank" style="text-decoration:none;">
+              <img src="img/cursos/grua-viajera.jpg" alt="Grúa Viajera" style="display:block;">
             </a>
+            <p href="grua-viajera.html" target="_blank"
+              style="text-decoration:none;margin-top:8px;font-size:larger;font-weight:500;" class="t-small t-bright">
+              Grúa Viajera</p>
           </div>
 
           <!-- Curso 6 -->
-          <div class="marquee__item one-line item-large image"
+          <div class="marquee__item marquee__link_aux one-line item-large image"
             style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
-            <a class="marquee__link" target="_blank" style="text-decoration:none;">
-              <img src="img/inicio/carrusel-1/6.jpeg" style="display:block;">
+            <a class="marquee__link" href="plataforma-elevadora.html" target="_blank" style="text-decoration:none;">
+              <img src="img/cursos/plataforma-elevadora.jpg" alt="Plataforma Elevadora" style="display:block;">
             </a>
-          </div>
-
-          <!-- Curso 7 -->
-          <div class="marquee__item one-line item-large image"
-            style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
-            <a class="marquee__link" target="_blank" style="text-decoration:none;">
-              <img src="img/inicio/carrusel-1/7.jpeg" style="display:block;">
-            </a>
-          </div>
-
-          <!-- Curso 8 -->
-          <div class="marquee__item one-line item-large image"
-            style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
-            <a class="marquee__link" target="_blank" style="text-decoration:none;">
-              <img src="img/inicio/carrusel-1/8.jpeg" style="display:block;">
-            </a>
-          </div>
-
-          <!-- Curso 9 -->
-          <div class="marquee__item one-line item-large image"
-            style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
-            <a class="marquee__link" target="_blank" style="text-decoration:none;">
-              <img src="img/inicio/carrusel-1/9.jpeg" style="display:block;">
-            </a>
+            <p href="plataforma-elevadora.html" target="_blank"
+              style="text-decoration:none;margin-top:8px;font-size:larger;font-weight:500;" class="t-small t-bright">
+              Plataforma
+              Elevadora</p>
           </div>
 
           <!-- Curso 10 -->
-          <div class="marquee__item one-line item-large image"
+          <div class="marquee__item marquee__link_aux one-line item-large image"
             style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
-            <a class="marquee__link" target="_blank" style="text-decoration:none;">
-              <img src="img/inicio/carrusel-1/10.jpeg" style="display:block;">
+            <a class="marquee__link" href="montacargas.html" target="_blank" style="text-decoration:none;">
+              <img src="img/cursos/montacargas.jpg" alt="Operación de Montacargas" style="display:block;">
             </a>
+            <p href="montacargas.html" target="_blank"
+              style="text-decoration:none;margin-top:8px;font-size:larger;font-weight:500;" class="t-small t-bright">
+              Operación de
+              Montacargas</p>
           </div>
 
           <!-- Curso 11 -->
-          <div class="marquee__item one-line item-large image"
+          <div class="marquee__item marquee__link_aux one-line item-large image"
             style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
-            <a class="marquee__link" target="_blank" style="text-decoration:none;">
-              <img src="img/inicio/carrusel-1/11.jpeg" style="display:block;">
+            <a class="marquee__link" href="trabajo-en-alturas.html" target="_blank" style="text-decoration:none;">
+              <img src="img/cursos/trabajo-en-alturas.jpg" alt="Trabajo en Alturas" style="display:block;">
             </a>
+            <p href="trabajo-en-alturas.html" target="_blank"
+              style="text-decoration:none;margin-top:8px;font-size:larger;font-weight:500;" class="t-small t-bright">
+              Trabajo en
+              Alturas</p>
           </div>
 
-          <!-- Curso 12 -->
-          <div class="marquee__item one-line item-large image"
+          <!-- Curso 7 -->
+          <div class="marquee__item marquee__link_aux one-line item-large image"
             style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
-            <a class="marquee__link" target="_blank" style="text-decoration:none;">
-              <img src="img/inicio/carrusel-1/12.jpeg" style="display:block;">
+            <a class="marquee__link" href="trabajos-con-electricidad.html" target="_blank"
+              style="text-decoration:none;">
+              <img src="img/cursos/trabajos-con-electricidad.jpg" alt="Trabajos Con Electricidad"
+                style="display:block;">
             </a>
+            <p href="trabajos-con-electricidad.html" target="_blank"
+              style="text-decoration:none;margin-top:8px;font-size:larger;font-weight:500;" class="t-small t-bright">
+              Trabajos con
+              Electricidad</p>
           </div>
 
-          <!-- Curso 13 -->
-          <div class="marquee__item one-line item-large image"
+          <!-- Curso 8 -->
+          <div class="marquee__item marquee__link_aux one-line item-large image"
             style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
-            <a class="marquee__link" target="_blank" style="text-decoration:none;">
-              <img src="img/inicio/carrusel-1/13.jpeg" style="display:block;">
+            <a class="marquee__link" href="manejo-de-sustancias-quimicas.html" target="_blank"
+              style="text-decoration:none;">
+              <img src="img/cursos/sustancias-quimicas.jpg" alt="Sustancias Químicas" style="display:block;">
             </a>
+            <p href="manejo-de-sustancias-quimicas.html" target="_blank"
+              style="text-decoration:none;margin-top:8px;font-size:larger;font-weight:500;" class="t-small t-bright">
+              Manejo de
+              Sustancias
+              Químicas Peligrosas</p>
           </div>
 
-          <!-- Curso 14 -->
-          <div class="marquee__item one-line item-large image"
+          <!-- Curso 9 -->
+          <div class="marquee__item marquee__link_aux one-line item-large image"
             style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
-            <a class="marquee__link" target="_blank" style="text-decoration:none;">
-              <img src="img/inicio/carrusel-1/14.jpeg" style="display:block;">
+            <a class="marquee__link" href="lock-out-and-tag-out.html" target="_blank" style="text-decoration:none;">
+              <img src="img/cursos/lock-out-and-tag.png" alt="Lock Out & Tag Out (LOTO)" style="display:block;">
             </a>
+            <p href="lock-out-and-tag-out.html" target="_blank"
+              style="text-decoration:none;margin-top:8px;font-size:larger;font-weight:500;" class="t-small t-bright">
+              Lock Out & Tag
+              Out
+              (LOTO)</p>
           </div>
-
-          <!-- Curso 15 -->
-          <div class="marquee__item one-line item-large image"
-            style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
-            <a class="marquee__link" target="_blank" style="text-decoration:none;">
-              <img src="img/inicio/carrusel-1/15.jpeg" style="display:block;">
-            </a>
-          </div>
-
         </div>
+
       </div>
-      <!-- Marquee Divider End -->
     </div>
-    <!-- Carrusel 1 - Fin -->
+    <!-- Marquee Divider End -->
+    </div>
+
+    <!-- Catálogo de cursos - Fin -->
+
+
 
     <!-- Section - Services Cards Start -->
     <div class="mxd-section overflow-hidden padding-pre-title">
@@ -496,6 +589,138 @@
       </div>
     </div>
     <!-- Section - Services Cards End -->
+
+    <!-- Carrusel 1 - Inicio -->
+    <div class="mxd-block loading__fade">
+      <!-- Marquee Divider Start -->
+      <div class="marquee marquee-right--gsap">
+        <div class="marquee__toright">
+
+          <!-- Curso 1 -->
+          <div class="marquee__item marquee__link_aux one-line item-large image"
+            style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
+            <a class="marquee__link" target="_blank" style="text-decoration:none;">
+              <img src="img/inicio/carrusel-1/1.jpg" style="display:block;">
+            </a>
+          </div>
+
+          <!-- Curso 2 -->
+          <div class="marquee__item marquee__link_aux one-line item-large image"
+            style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
+            <a class="marquee__link" target="_blank" style="text-decoration:none;">
+              <img src="img/inicio/carrusel-1/2.jpeg" style="display:block;">
+            </a>
+          </div>
+
+          <!-- Curso 3 -->
+          <div class="marquee__item marquee__link_aux one-line item-large image"
+            style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
+            <a class="marquee__link" target="_blank" style="text-decoration:none;">
+              <img src="img/inicio/carrusel-1/3.jpeg" style="display:block;">
+            </a>
+          </div>
+
+          <!-- Curso 4 -->
+          <div class="marquee__item marquee__link_aux one-line item-large image"
+            style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
+            <a class="marquee__link" target="_blank" style="text-decoration:none;">
+              <img src="img/inicio/carrusel-1/4.jpeg" style="display:block;">
+            </a>
+          </div>
+
+          <!-- Curso 5 -->
+          <div class="marquee__item marquee__link_aux one-line item-large image"
+            style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
+            <a class="marquee__link" target="_blank" style="text-decoration:none;">
+              <img src="img/inicio/carrusel-1/5.jpeg" style="display:block;">
+            </a>
+          </div>
+
+          <!-- Curso 6 -->
+          <div class="marquee__item marquee__link_aux one-line item-large image"
+            style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
+            <a class="marquee__link" target="_blank" style="text-decoration:none;">
+              <img src="img/inicio/carrusel-1/6.jpeg" style="display:block;">
+            </a>
+          </div>
+
+          <!-- Curso 7 -->
+          <div class="marquee__item marquee__link_aux one-line item-large image"
+            style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
+            <a class="marquee__link" target="_blank" style="text-decoration:none;">
+              <img src="img/inicio/carrusel-1/7.jpeg" style="display:block;">
+            </a>
+          </div>
+
+          <!-- Curso 8 -->
+          <div class="marquee__item marquee__link_aux one-line item-large image"
+            style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
+            <a class="marquee__link" target="_blank" style="text-decoration:none;">
+              <img src="img/inicio/carrusel-1/8.jpeg" style="display:block;">
+            </a>
+          </div>
+
+          <!-- Curso 9 -->
+          <div class="marquee__item marquee__link_aux one-line item-large image"
+            style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
+            <a class="marquee__link" target="_blank" style="text-decoration:none;">
+              <img src="img/inicio/carrusel-1/9.jpeg" style="display:block;">
+            </a>
+          </div>
+
+          <!-- Curso 10 -->
+          <div class="marquee__item marquee__link_aux one-line item-large image"
+            style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
+            <a class="marquee__link" target="_blank" style="text-decoration:none;">
+              <img src="img/inicio/carrusel-1/10.jpeg" style="display:block;">
+            </a>
+          </div>
+
+          <!-- Curso 11 -->
+          <div class="marquee__item marquee__link_aux one-line item-large image"
+            style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
+            <a class="marquee__link" target="_blank" style="text-decoration:none;">
+              <img src="img/inicio/carrusel-1/11.jpeg" style="display:block;">
+            </a>
+          </div>
+
+          <!-- Curso 12 -->
+          <div class="marquee__item marquee__link_aux one-line item-large image"
+            style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
+            <a class="marquee__link" target="_blank" style="text-decoration:none;">
+              <img src="img/inicio/carrusel-1/12.jpeg" style="display:block;">
+            </a>
+          </div>
+
+          <!-- Curso 13 -->
+          <div class="marquee__item marquee__link_aux one-line item-large image"
+            style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
+            <a class="marquee__link" target="_blank" style="text-decoration:none;">
+              <img src="img/inicio/carrusel-1/13.jpeg" style="display:block;">
+            </a>
+          </div>
+
+          <!-- Curso 14 -->
+          <div class="marquee__item marquee__link_aux one-line item-large image"
+            style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
+            <a class="marquee__link" target="_blank" style="text-decoration:none;">
+              <img src="img/inicio/carrusel-1/14.jpeg" style="display:block;">
+            </a>
+          </div>
+
+          <!-- Curso 15 -->
+          <div class="marquee__item marquee__link_aux one-line item-large image"
+            style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
+            <a class="marquee__link" target="_blank" style="text-decoration:none;">
+              <img src="img/inicio/carrusel-1/15.jpeg" style="display:block;">
+            </a>
+          </div>
+
+        </div>
+      </div>
+      <!-- Marquee Divider End -->
+    </div>
+    <!-- Carrusel 1 - Fin -->
 
     <div class="mxd-section mxd-hero-section">
       <div class="mxd-hero-00">
@@ -604,108 +829,200 @@
     </div>
     <!-- Section - Projects Stacking Cards End -->
 
-    <div class="mxd-section padding-grid-pre-pinned" style="padding-bottom: 0!important;">
+    <div class="mxd-section mxd-section-inner-headline padding-s-text-pre-block" style="padding-top: 0rem!important">
       <div class="mxd-container grid-container">
 
-        <!-- Block - Stack Universal Pinned Block with Section Title Start -->
-        <div class="mxd-block">
-          <div class="mxd-pinned-universal">
-            <div class="container-fluid px-0">
-              <div class="row gx-0">
-                <div class="col-12 col-xl-5 mxd-pinned-universal__static">
-                  <div class="mxd-pinned-universal__static-inner no-margin">
+        <!-- Block - Inner Page Headline Start -->
+        <div class="mxd-block loading-wrap">
+          <div class="container-fluid px-0">
+            <div class="row gx-0">
 
-                    <!-- Section Title Start -->
-                    <div class="mxd-section-title h2-only no-margin-desktop">
-                      <div class="container-fluid p-0">
-                        <div class="row g-0">
-                          <div class="col-12 mxd-grid-item no-margin">
-                            <div class="mxd-section-title__title card-split-title">
-                              <h2 class="reveal-type">Por qué<br>elegirnos</h2>
-                            </div>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                    <!-- Section Title Start -->
+              <!-- Inner Headline Content Start -->
+              <div class="col-12 col-xl-12 mxd-grid-item no-margin">
 
+                <div class="mxd-block__content" id="preguntas-frecuentes">
+                  <div class="mxd-block__inner-headline"
+                    style="display: flex; flex-direction: column; align-items: center; justify-content: flex-start; height: 100%;">
+                    <h2 style="margin-bottom: 0; padding-top: 0rem; text-align: center;">Diferenciadores y
+                      beneficios
+                    </h2>
+                    <p class="inner-headline__text t-large t-bright loading__item" style="text-align: center;">
+                      <br>¿Tienes
+                      alguna otra duda? <a
+                        href="#contact-form"
+                        target="_blank" rel="noopener">¡Contáctanos!</a>
+                    </p>
                   </div>
                 </div>
-                <div class="col-12 col-xl-7 mxd-pinned-universal__scroll">
-                  <div class="mxd-pinned-universal__scroll-inner mxd-grid-item no-margin">
-                    <div class="mxd-tech-stack-cards grid-cards">
-                      <!-- item -->
-                      <div class="mxd-tech-stack-cards__item animate-card-4">
-                        <div class="mxd-tech-stack-cards__inner-v2">
-                          <div class="mxd-tech-stack-cards__icon">
-                            <img src="img/inicio/direfenciadores-instructores.png" alt="Tech Stack Icon">
-                          </div>
-                          <div class="mxd-tech-stack-cards__title">
-                            <p class="t-bright t-caption">Instructores expertos
-                              y certificados</p>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- item -->
-                      <div class="mxd-tech-stack-cards__item animate-card-4">
-                        <div class="mxd-tech-stack-cards__inner-v2">
-                          <div class="mxd-tech-stack-cards__icon">
-                            <img src="img/inicio/direfenciadores-adaptacion.png" alt="Tech Stack Icon">
-                          </div>
-                          <div class="mxd-tech-stack-cards__title">
-                            <p class="t-bright t-caption">Nos adaptamos a las necesidades de tu empresa
-                            </p>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- item -->
-                      <div class="mxd-tech-stack-cards__item animate-card-4">
-                        <div class="mxd-tech-stack-cards__inner-v2">
-                          <div class="mxd-tech-stack-cards__icon">
-                            <img src="img/inicio/direfenciadores-garantia.png" alt="Tech Stack Icon">
-                          </div>
-                          <div class="mxd-tech-stack-cards__title">
-                            <p class="t-bright t-caption">Brindamos asesoría
-                              post-capacitación</p>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- item -->
-                      <div class="mxd-tech-stack-cards__item animate-card-4">
-                        <div class="mxd-tech-stack-cards__inner-v2">
-                          <div class="mxd-tech-stack-cards__icon">
-                            <img src="img/inicio/direfenciadores-garantia.png" alt="Tech Stack Icon">
-                          </div>
-                          <div class="mxd-tech-stack-cards__title">
-                            <p class="t-bright t-caption">Garantías de rotación y mejora de precio</p>
-                          </div>
-                        </div>
-                      </div>
-                      <!-- item -->
-                      <div class="mxd-tech-stack-cards__item animate-card-4">
-                        <div class="mxd-tech-stack-cards__inner-v2">
-                          <div class="mxd-tech-stack-cards__icon">
-                            <img src="img/inicio/direfenciadores-32-estados.png" alt="Tech Stack Icon">
-                          </div>
-                          <div class="mxd-tech-stack-cards__title">
-                            <p class="t-bright t-caption">Capacitamos en los 32 estados de la república</p>
-                          </div>
-                        </div>
-                      </div>
-                    </div>
-                  </div>
-                </div>
+
               </div>
+              <!-- Inner Headline Content End -->
+
             </div>
           </div>
         </div>
-        <!-- Block - Stack Universal Pinned Block with Section Title Start -->
+        <!-- Block - Inner Page Headline End -->
+
+      </div>
+    </div>
+
+    <div class="mxd-section mxd-section-inner-form padding-default">
+      <div class="mxd-container grid-container">
+
+        <!-- Block - Inner Page Headline Start -->
+        <div class="mxd-block">
+          <div class="container-fluid px-0">
+            <div class="row gx-0">
+
+              <!-- Inner Headline Name Start -->
+              <div class="col-12 col-xl-2 mxd-grid-item no-margin"></div>
+              <!-- Inner Headline Name Start -->
+
+              <!-- Inner Headline Content Start -->
+              <div class="col-12 col-xl-8 mxd-grid-item no-margin">
+
+                <div class="mxd-block__content">
+                  <div class="mxd-accordion loading__fade">
+                    <!-- accordion single item -->
+                    <div class="mxd-accordion__item">
+                      <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                      <div class="mxd-accordion__title anim-uni-in-up">
+                        <h6>¿Y SI EL PERSONAL SE VA DESPUÉS DE CAPACITARSE?</h6>
+                        <div class="mxd-accordion__arrow">
+                          <i class="ph ph-plus"></i>
+                        </div>
+                      </div>
+                      <div class="mxd-accordion__content">
+                        <p align="justify" class="mxd-accordion__text">Somos los únicos en todo México que ofrecemos
+                          una
+                          garantía para proteger tu inversión: si un colaborador se separa dentro de los primeros 3
+                          meses, capacitamos sin costo a su nuevo ingreso. Continuidad y tranquilidad para su empresa.
+                          (Aplican términos y condiciones).
+                        </p>
+                      </div>
+                      <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                    </div>
+                    <!-- accordion single item -->
+                    <div class="mxd-accordion__item">
+                      <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                      <div class="mxd-accordion__title anim-uni-in-up">
+                        <h6>CAPACITACIÓN CON REALIDAD INMERSIVA</h6>
+                        <div class="mxd-accordion__arrow">
+                          <i class="ph ph-plus"></i>
+                        </div>
+                      </div>
+                      <div class="mxd-accordion__content">
+                        <p align="justify" class="mxd-accordion__text">Viva una nueva forma de capacitar: experiencias
+                          virtuales realistas donde sus participantes practican, resuelven y deciden en entornos
+                          simulados que impulsan la retención del conocimiento, fortalecen la seguridad y elevan la
+                          efectividad del entrenamiento.
+                        </p>
+                      </div>
+                      <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                    </div>
+                    <!-- accordion single item -->
+                    <div class="mxd-accordion__item">
+                      <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                      <div class="mxd-accordion__title anim-uni-in-up">
+                        <h6>GAMIFICACIÓN</h6>
+                        <div class="mxd-accordion__arrow">
+                          <i class="ph ph-plus"></i>
+                        </div>
+                      </div>
+                      <div class="mxd-accordion__content">
+                        <p align="justify" class="mxd-accordion__text">Cursos en línea que incorporan elementos de
+                          juego
+                          como puntos, retos y recompensas para motivar la participación, aumentar el compromiso y
+                          mejorar el aprendizaje, haciendo que la experiencia de capacitación sea más dinámica,
+                          interactiva y efectiva.
+                        </p>
+                      </div>
+                      <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                    </div>
+                    <!-- accordion single item -->
+                    <div class="mxd-accordion__item">
+                      <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                      <div class="mxd-accordion__title anim-uni-in-up">
+                        <h6>RESPUESTA INMEDIATA</h6>
+                        <div class="mxd-accordion__arrow">
+                          <i class="ph ph-plus"></i>
+                        </div>
+                      </div>
+                      <div class="mxd-accordion__content">
+                        <p align="justify" class="mxd-accordion__text">Atención rápida y eficiente ante cualquier
+                          solicitud, brindando soluciones ágiles en cotizaciones, inscripciones o dudas sobre cursos.
+                        </p>
+                      </div>
+                      <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                    </div>
+                    <!-- accordion single item -->
+                    <div class="mxd-accordion__item">
+                      <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                      <div class="mxd-accordion__title anim-uni-in-up">
+                        <h6>ENTREGAS URGENTES</h6>
+                        <div class="mxd-accordion__arrow">
+                          <i class="ph ph-plus"></i>
+                        </div>
+                      </div>
+                      <div class="mxd-accordion__content">
+                        <p align="justify" class="mxd-accordion__text">
+                          Proporcionamos documentos, constancias y reportes de capacitación de forma rápida y
+                          eficiente,
+                          asegurando que tu empresa cumpla en tiempo con sus requerimientos y auditorías.
+                        </p>
+                      </div>
+                      <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                    </div>
+                    <!-- accordion single item -->
+                    <div class="mxd-accordion__item">
+                      <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                      <div class="mxd-accordion__title anim-uni-in-up">
+                        <h6>COTIZACIONES CON TARIFA DINÁMICA</h6>
+                        <div class="mxd-accordion__arrow">
+                          <i class="ph ph-plus"></i>
+                        </div>
+                      </div>
+                      <div class="mxd-accordion__content">
+                        <p align="justify" class="mxd-accordion__text">Adaptadas a las necesidades, número de
+                          participantes y modalidad del curso, garantizando siempre la mejor relación costo-beneficio
+                          para tu empresa.
+                        </p>
+                      </div>
+                      <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                    </div>
+                    <!-- accordion single item -->
+                    <div class="mxd-accordion__item">
+                      <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                      <div class="mxd-accordion__title anim-uni-in-up">
+                        <h6>POSIBILIDAD DE ARMAR TU PROPIA COTIZACIÓN</h6>
+                        <div class="mxd-accordion__arrow">
+                          <i class="ph ph-plus"></i>
+                        </div>
+                      </div>
+                      <div class="mxd-accordion__content">
+                        <p align="justify" class="mxd-accordion__text">Puedes seleccionar los cursos, modalidades y
+                          servicios adicionales que mejor se adapten a tus necesidades, obteniendo una propuesta
+                          personalizada al instante.
+                        </p>
+                      </div>
+                      <div class="mxd-accordion__divider anim-uni-in-up"></div>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+              <!-- Inner Headline Content End -->
+
+            </div>
+          </div>
+        </div>
+        <!-- Block - Inner Page Headline End -->
 
       </div>
     </div>
 
     <!-- Section - Projects Pinned #01 Start -->
-    <div id="projects" class="mxd-section padding-hero-06 padding-default">
+    <div id="projects" class="mxd-section padding-hero-06 padding-default" style="padding-top: 0rem!important;">
       <div class="mxd-container grid-container">
 
         <!-- Block - Projects Pinned #01 with Section Title Start -->
@@ -727,9 +1044,9 @@
                           </div>
                           <div class="col-12 mxd-grid-item no-margin">
                             <div class="mxd-section-title__descr">
-                              <p class="anim-uni-in-up" style="text-align: justify;">La inversión en innovación que
-                                realmente vale la
-                                pena es la que coloca a sus clientes y empleados en el centro de su prioridad.</p>
+                              <p class="anim-uni-in-up" style="text-align: justify;">Puedes seleccionar los cursos,
+                                modalidades y servicios adicionales que mejor se adapten a tus necesidades, obteniendo
+                                una propuesta personalizada al instante.</p>
                             </div>
                           </div>
                           <div class="col-12 mxd-grid-item no-margin">
@@ -1023,161 +1340,6 @@
     </div>
     <!-- Marcas - Fin -->
 
-    <!-- Cursos - Inicio -->
-    <div class="mxd-section">
-      <div class="mxd-block">
-        <div class="mxd-section-title pre-grid">
-          <div class="container-fluid p-0">
-            <div>
-              <div class="mxd-demo-components__title anim-uni-in-up">
-                <span class="reveal-type">CURSOS</span>
-              </div>
-            </div>
-
-            <!-- bottom group -->
-            <div class="mxd-hero-00__bottom">
-              <div class="hero-00-manifest loading__fade" style="padding-top: 10rem; padding-bottom: 8rem;">
-                <p class="mxd-manifest anim-uni-in-up reveal-type">Nuestros cursos están enfocados 100% en el
-                  aprovechamiento práctico y teórico combinado para lograr un mejor aprendizaje.
-                </p>
-              </div>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    <!-- Cursos - Fin -->
-
-    <!-- Catálogo de cursos - Inicio -->
-    <!-- Block - Marquee Projects Links One Line Start -->
-    <div class="mxd-block loading__fade">
-      <!-- Marquee Divider Start -->
-      <div class="marquee marquee-right--gsap">
-        <div class="marquee__toright">
-
-          <!-- Curso 1 -->
-          <div class="marquee__item one-line item-large image"
-            style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
-            <a class="marquee__link" href="corte-y-soldadura.html" target="_blank" style="text-decoration:none;">
-              <img src="img/cursos/corte-y-soldadura.jpg" alt="Corte y Soldadura" style="display:block;">
-            </a>
-            <p href="corte-y-soldadura.html" target="_blank"
-              style="text-decoration:none;margin-top:8px;font-size:larger;font-weight:500;" class="t-small t-bright">
-              Corte y
-              Soldadura</p>
-          </div>
-
-          <!-- Curso 2 -->
-          <div class="marquee__item one-line item-large image"
-            style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
-            <a class="marquee__link" href="recipientes-sujetos-a-presion.html" target="_blank"
-              style="text-decoration:none;">
-              <img src="img/cursos/recipientes-sujetos-a-presion.png" alt="Recipientes Sujetos a Presión"
-                style="display:block;">
-            </a>
-            <p href="recipientes-sujetos-a-presion.html" target="_blank"
-              style="text-decoration:none;margin-top:8px;font-size:larger;font-weight:500;" class="t-small t-bright">
-              Recipientes
-              sujetos
-              a presión</p>
-          </div>
-
-          <!-- Curso 3 -->
-          <div class="marquee__item one-line item-large image"
-            style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
-            <a class="marquee__link" href="espacios-confinados.html" target="_blank" style="text-decoration:none;">
-              <img src="img/cursos/espacios-confinados.png" alt="Espacios Confinados" style="display:block;">
-            </a>
-            <p href="espacios-confinados.html" target="_blank"
-              style="text-decoration:none;margin-top:8px;font-size:larger;font-weight:500;" class="t-small t-bright">
-              Espacios
-              Confinados</p>
-          </div>
-
-          <!-- Curso 4 -->
-          <div class="marquee__item one-line item-large image"
-            style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
-            <a class="marquee__link" href="sistema-armonizado.html" target="_blank" style="text-decoration:none;">
-              <img src="img/cursos/sistema-armonizado.png" alt="Sistema Armonizado" style="display:block;">
-            </a>
-            <p href="sistema-armonizado.html" target="_blank"
-              style="text-decoration:none;margin-top:8px;font-size:larger;font-weight:500;" class="t-small t-bright">
-              Sistema
-              Armonizado</p>
-          </div>
-
-          <!-- Curso 5 -->
-          <div class="marquee__item one-line item-large image"
-            style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
-            <a class="marquee__link" href="grua-viajera.html" target="_blank" style="text-decoration:none;">
-              <img src="img/cursos/grua-viajera.jpg" alt="Grúa Viajera" style="display:block;">
-            </a>
-            <p href="grua-viajera.html" target="_blank"
-              style="text-decoration:none;margin-top:8px;font-size:larger;font-weight:500;" class="t-small t-bright">
-              Grúa Viajera</p>
-          </div>
-
-          <!-- Curso 6 -->
-          <div class="marquee__item one-line item-large image"
-            style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
-            <a class="marquee__link" href="plataforma-elevadora.html" target="_blank" style="text-decoration:none;">
-              <img src="img/cursos/plataforma-elevadora.jpg" alt="Plataforma Elevadora" style="display:block;">
-            </a>
-            <p href="plataforma-elevadora.html" target="_blank"
-              style="text-decoration:none;margin-top:8px;font-size:larger;font-weight:500;" class="t-small t-bright">
-              Plataforma
-              Elevadora</p>
-          </div>
-
-          <!-- Curso 7 -->
-          <div class="marquee__item one-line item-large image"
-            style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
-            <a class="marquee__link" href="trabajos-con-electricidad.html" target="_blank"
-              style="text-decoration:none;">
-              <img src="img/cursos/trabajos-con-electricidad.jpg" alt="Trabajos Con Electricidad"
-                style="display:block;">
-            </a>
-            <p href="trabajos-con-electricidad.html" target="_blank"
-              style="text-decoration:none;margin-top:8px;font-size:larger;font-weight:500;" class="t-small t-bright">
-              Trabajos con
-              Electricidad</p>
-          </div>
-
-          <!-- Curso 8 -->
-          <div class="marquee__item one-line item-large image"
-            style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
-            <a class="marquee__link" href="manejo-de-sustancias-quimicas.html" target="_blank"
-              style="text-decoration:none;">
-              <img src="img/cursos/sustancias-quimicas.jpg" alt="Sustancias Químicas" style="display:block;">
-            </a>
-            <p href="manejo-de-sustancias-quimicas.html" target="_blank"
-              style="text-decoration:none;margin-top:8px;font-size:larger;font-weight:500;" class="t-small t-bright">
-              Sustancias
-              Químicas</p>
-          </div>
-
-          <!-- Curso 9 -->
-          <div class="marquee__item one-line item-large image"
-            style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
-            <a class="marquee__link" href="lock-out-and-tag-out.html" target="_blank" style="text-decoration:none;">
-              <img src="img/cursos/lock-out-and-tag.png" alt="Lock Out & Tag Out (LOTO)" style="display:block;">
-            </a>
-            <p href="lock-out-and-tag-out.html" target="_blank"
-              style="text-decoration:none;margin-top:8px;font-size:larger;font-weight:500;" class="t-small t-bright">
-              Lock Out & Tag
-              Out
-              (LOTO)</p>
-          </div>
-
-        </div>
-      </div>
-      <!-- Marquee Divider End -->
-    </div>
-    <!-- Block - Marquee Projects Links One Line End -->
-
-
-    <!-- Catálogo de cursos - Fin -->
-
     <!-- Section - Inner Page Headline Start -->
     <div class="mxd-section mxd-section-inner-headline padding-s-text-pre-form overflow-hidden">
       <div class="mxd-container grid-container">
@@ -1200,13 +1362,7 @@
                       <span>Contáctanos</span>
                     </div>
                     <p align="justify" class="inner-headline__text t-large t-bright loading__item">
-                      ¿Tienes dudas sobre nuestras capacitaciones o necesitas una cotización personalizada?
-                      En AMZU CAPACITACIÓN estamos listos para orientarte y brindarte toda la información que necesites
-                      sobre nuestros cursos, certificaciones y servicios empresariales.
-                      Ya sea que quieras conocer los costos, los temas que manejamos o los requisitos para capacitar a
-                      tu personal,
-                      contáctanos y con gusto resolveremos tus preguntas. Nuestro equipo está aquí para apoyarte en cada
-                      paso del proceso.
+                      ¿Tienes dudas sobre nuestras capacitaciones o necesitas una cotización personalizada? Nuestro equipo está aquí para apoyarte en cada paso del proceso y brindarte la información que necesites sobre nuestros cursos, certificaciones y servicios en seguridad industrial. Desde costos, temas y contenido, o los requisitos para capacitar a tu personal, con gusto te atenderemos.
                     </p>
                   </div>
                 </div>
@@ -1268,7 +1424,7 @@
                             </div>
                             <div class="col-12 mxd-grid-item anim-uni-in-up">
                               <textarea name="Intereses"
-                                placeholder="Cuéntanos sobre tu interés en capacitaciones o servicios empresariales*"
+                                placeholder="¿Qué capacitación o servicio es de tu interés?*"
                                 required></textarea>
                             </div>
                             <div class="col-12 mxd-grid-item anim-uni-in-up">
@@ -1520,7 +1676,7 @@
                   </span>
                   <span class="mxd-footer-promo__item">
                     <span class="mxd-footer-promo__link anim-uni-in-up">
-                      <span class="phone-static" data-phone="+524412953643">441 295 3643</span> <br>
+                      <span class="phone-static" data-phone="+524422953643">442 295 3643</span> <br>
                       <a href="#" class="phone-link phone-whatsapp" data-phone="+524427878079">442 787 8079</a>
                     </span>
                   </span>
@@ -1636,7 +1792,6 @@
       }
     }
 
-    /* 💬 Rebote con brillo potente */
     @keyframes bouncePulse {
 
       0%,
@@ -1666,20 +1821,17 @@
       }
     }
 
-    /* 🔁 Aplica la animación */
     .btn-whatsapp-fixed {
       animation: bouncePulse 5s ease-in-out infinite;
       animation-delay: 1.5s;
       transition: transform 0.3s, box-shadow 0.3s;
     }
 
-    /* ✋ Aún más brillo al pasar el mouse */
     .btn-whatsapp-fixed:hover {
       transform: scale(1.2);
       box-shadow: 0 0 60px 15px rgba(255, 223, 0, 0.8);
     }
 
-    /* 🌟 Espaciado personalizado solo para el carrusel de clientes */
     .marquee-clientes .marquee__item {
       padding: 0 0rem;
     }

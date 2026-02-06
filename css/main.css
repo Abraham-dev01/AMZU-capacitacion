@@ -20343,17 +20343,17 @@ form textarea:required:valid {
 
 .marquee__link {
   display: block;
-  width: 100%;
+  width: auto;
   height: 100%;
 }
 
-.marquee__link img {
+/* .marquee__link img {
   display: block;
   width: 100%;
   height: 100%;
   -o-object-fit: cover;
   object-fit: cover;
-}
+} */
 
 .marquee__text {
   margin-right: 1.6rem;
@@ -21260,7 +21260,7 @@ form textarea:required:valid {
 }
 
 .mxd-projects-stack__title.no-margin {
-  margin-bottom: 0;
+  margin-bottom: 5rem;
 }
 
 .mxd-projects-stack__tags {

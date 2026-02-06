@@ -193,24 +193,56 @@
   <!-- Menu & Menu Hamburger End -->
 
   <!-- Header Start -->
-  <header id="header" class="mxd-header">
+    <header id="header" class="mxd-header">
     <!-- header logo -->
     <div class="mxd-header__logo loading__fade">
       <a href="index.html" target="_blank" class="mxd-logo">
         <!-- logo icon -->
-        <img src="img/header/AMZU-Header-logo.png" alt="Logo AMZU" class="mxd-logo__image mxd-logo__light">
-        <img src="img/header/AMZU-Header-logo-dark.png" alt="Logo AMZU" class="mxd-logo__image mxd-logo__dark">
+        <img src="img/header/AMZU-Header-logo-dark.png" alt="Logo AMZU" class="mxd-logo__image">
         <!-- logo text -->
       </a>
     </div>
+
+        <!-- Menú visible entre logo y controles - Inicio -->
+    <nav class="main-menu main-menu--inline">
+      <ul class="main-menu__list">
+        <li class="main-menu__item">
+          <a href="index.html" class="main-menu__link btn btn-anim">
+            <span class="btn-caption">Inicio</span>
+          </a>
+        </li>
+        <li class="main-menu__item">
+          <a href="acerca-de-nosotros.html" class="main-menu__link btn btn-anim">
+            <span class="btn-caption">Acerca de nosotros</span>
+          </a>
+        </li>
+        <li class="main-menu__item">
+          <a href="cursos.html" class="main-menu__link btn btn-anim">
+            <span class="btn-caption">Catálogo de cursos</span>
+          </a>
+        </li>
+        <li class="main-menu__item">
+          <a href="servicios.html" class="main-menu__link btn btn-anim">
+            <span class="btn-caption">Servicios</span>
+          </a>
+        </li>
+        <li class="main-menu__item">
+          <a href="contacto.html" class="main-menu__link btn btn-anim">
+            <span class="btn-caption">Contacto</span>
+          </a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Menú visible entre logo y controles - Fin -->
+
     <!-- header controls -->
     <div class="mxd-header__controls loading__fade">
       <button id="color-switcher" class="mxd-color-switcher" type="button" role="switch" aria-label="light/dark mode"
-        aria-checked="true"></button>
-      <a class="btn btn-anim btn-default btn-mobile-icon btn-outline slide-right" href="contacto.html" target="_blank"
-        target="_blank">
-        <span class="btn-caption">Solicitar cotización</span>
-        <i class="ph-bold ph-shopping-cart-simple"></i>
+        aria-checked="true" style="color: white!important;"></button>
+      <a class="btn btn-anim btn-default btn-mobile-icon btn-outline slide-right btn-yellow" style="color: #ecaf2a;"
+        href="contacto.html" target="_blank" target="_blank">
+        <span class="btn-caption" style="color: black!important;">Solicitar cotización</span>
+        <i class="ph-bold ph-shopping-cart-simple" style="color: black!important;"></i>
       </a>
     </div>
   </header>
@@ -220,7 +252,7 @@
   <main id="mxd-page-content" class="mxd-page-content">
 
     <!-- Section - Inner Page Headline Start -->
-    <div class="mxd-section mxd-section-inner-headline padding-s-text-pre-form overflow-hidden" style="height: 100vh!important;">
+    <div class="mxd-section mxd-section-inner-headline padding-s-text-pre-form overflow-hidden">
       <div class="mxd-container grid-container">
 
         <!-- Block - Inner Page Headline Start -->
@@ -271,13 +303,13 @@
     <!-- Section - Inner Page Headline End -->
 
     <!-- Carrusel 1 - Inicio -->
-    <div class="mxd-block loading__fade">
+    <div class="mxd-block loading__fade" style="padding-top: 10rem!important;">
       <!-- Marquee Divider Start -->
       <div class="marquee marquee-right--gsap">
         <div class="marquee__toright">
 
           <!-- Curso 1 -->
-          <div class="marquee__item one-line item-large image"
+          <div class="marquee__item marquee__link_aux one-line item-large image"
             style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
             <a class="marquee__link" target="_blank" style="text-decoration:none;">
               <img src="img/acerca-de-nosotros/carrusel-acerca/1.jpeg" style="display:block;">
@@ -285,7 +317,7 @@
           </div>
 
           <!-- Curso 2 -->
-          <div class="marquee__item one-line item-large image"
+          <div class="marquee__item marquee__link_aux one-line item-large image"
             style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
             <a class="marquee__link" target="_blank" style="text-decoration:none;">
               <img src="img/acerca-de-nosotros/carrusel-acerca/2.jpeg" style="display:block;">
@@ -293,7 +325,7 @@
           </div>
 
           <!-- Curso 3 -->
-          <div class="marquee__item one-line item-large image"
+          <div class="marquee__item marquee__link_aux one-line item-large image"
             style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
             <a class="marquee__link" target="_blank" style="text-decoration:none;">
               <img src="img/acerca-de-nosotros/carrusel-acerca/3.jpeg" style="display:block;">
@@ -301,7 +333,7 @@
           </div>
 
           <!-- Curso 4 -->
-          <div class="marquee__item one-line item-large image"
+          <div class="marquee__item marquee__link_aux one-line item-large image"
             style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
             <a class="marquee__link" target="_blank" style="text-decoration:none;">
               <img src="img/acerca-de-nosotros/carrusel-acerca/4.jpeg" style="display:block;">
@@ -309,7 +341,7 @@
           </div>
 
           <!-- Curso 5 -->
-          <div class="marquee__item one-line item-large image"
+          <div class="marquee__item marquee__link_aux one-line item-large image"
             style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
             <a class="marquee__link" target="_blank" style="text-decoration:none;">
               <img src="img/acerca-de-nosotros/carrusel-acerca/5.jpeg" style="display:block;">
@@ -317,7 +349,7 @@
           </div>
 
           <!-- Curso 6 -->
-          <div class="marquee__item one-line item-large image"
+          <div class="marquee__item marquee__link_aux one-line item-large image"
             style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
             <a class="marquee__link" target="_blank" style="text-decoration:none;">
               <img src="img/acerca-de-nosotros/carrusel-acerca/6.jpeg" style="display:block;">
@@ -325,7 +357,7 @@
           </div>
 
           <!-- Curso 7 -->
-          <div class="marquee__item one-line item-large image"
+          <div class="marquee__item marquee__link_aux one-line item-large image"
             style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
             <a class="marquee__link" target="_blank" style="text-decoration:none;">
               <img src="img/acerca-de-nosotros/carrusel-acerca/7.jpeg" style="display:block;">
@@ -333,7 +365,7 @@
           </div>
 
           <!-- Curso 8 -->
-          <div class="marquee__item one-line item-large image"
+          <div class="marquee__item marquee__link_aux one-line item-large image"
             style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
             <a class="marquee__link" target="_blank" style="text-decoration:none;">
               <img src="img/acerca-de-nosotros/carrusel-acerca/8.jpeg" style="display:block;">
@@ -341,7 +373,7 @@
           </div>
 
           <!-- Curso 9 -->
-          <div class="marquee__item one-line item-large image"
+          <div class="marquee__item marquee__link_aux one-line item-large image"
             style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
             <a class="marquee__link" target="_blank" style="text-decoration:none;">
               <img src="img/acerca-de-nosotros/carrusel-acerca/9.jpeg" style="display:block;">
@@ -349,7 +381,7 @@
           </div>
 
           <!-- Curso 10 -->
-          <div class="marquee__item one-line item-large image"
+          <div class="marquee__item marquee__link_aux one-line item-large image"
             style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
             <a class="marquee__link" target="_blank" style="text-decoration:none;">
               <img src="img/acerca-de-nosotros/carrusel-acerca/10.jpeg" style="display:block;">
@@ -357,7 +389,7 @@
           </div>
 
           <!-- Curso 11 -->
-          <div class="marquee__item one-line item-large image"
+          <div class="marquee__item marquee__link_aux one-line item-large image"
             style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
             <a class="marquee__link" target="_blank" style="text-decoration:none;">
               <img src="img/acerca-de-nosotros/carrusel-acerca/11.jpeg" style="display:block;">
@@ -365,7 +397,7 @@
           </div>
 
           <!-- Curso 12 -->
-          <div class="marquee__item one-line item-large image"
+          <div class="marquee__item marquee__link_aux one-line item-large image"
             style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
             <a class="marquee__link" target="_blank" style="text-decoration:none;">
               <img src="img/acerca-de-nosotros/carrusel-acerca/12.jpeg" style="display:block;">
@@ -373,7 +405,7 @@
           </div>
 
           <!-- Curso 13 -->
-          <div class="marquee__item one-line item-large image"
+          <div class="marquee__item marquee__link_aux one-line item-large image"
             style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
             <a class="marquee__link" target="_blank" style="text-decoration:none;">
               <img src="img/acerca-de-nosotros/carrusel-acerca/13.jpeg" style="display:block;">
@@ -381,7 +413,7 @@
           </div>
 
           <!-- Curso 14 -->
-          <div class="marquee__item one-line item-large image"
+          <div class="marquee__item marquee__link_aux one-line item-large image"
             style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
             <a class="marquee__link" target="_blank" style="text-decoration:none;">
               <img src="img/acerca-de-nosotros/carrusel-acerca/14.jpeg" style="display:block;">
@@ -389,7 +421,7 @@
           </div>
 
           <!-- Curso 15 -->
-          <div class="marquee__item one-line item-large image"
+          <div class="marquee__item marquee__link_aux one-line item-large image"
             style="display:flex;flex-direction:column;align-items:center;text-align:center; height: auto;">
             <a class="marquee__link" target="_blank" style="text-decoration:none;">
               <img src="img/acerca-de-nosotros/carrusel-acerca/15.jpeg" style="display:block;">
@@ -483,7 +515,7 @@
                         alt="Blog Preview Image">
                     </div>
                     <div class="mxd-preview-hover">
-                      <p style="margin: 3rem; text-align: justify; color: white;">Ser un referente en capacitación
+                      <p style="text-align: justify; color: white;">Ser un referente en capacitación
                         profesional e industrial, impulsando la competitividad empresarial a través del desarrollo de
                         competencias de su personal, y siendo el punto de partida de una transformación que eleva el
                         desempeño, la innovación y el crecimiento de las personas y las organizaciones.</p>
@@ -672,7 +704,7 @@
                   <div class="col-12 col-md-6 col-xl-3 mxd-partners-cards__item mxd-grid-item animate-card-4">
                     <a class="mxd-partners-cards__inner">
                       <div class="mxd-partners-cards__logo">
-                        <img src="img/inicio/clientes/color/mitsubishi.png" alt="Partner Logo">
+                        <img src="img/inicio/clientes/mitsubishi.png" alt="Partner Logo">
                       </div>
                     </a>
                   </div>
@@ -758,7 +790,7 @@
                   <div class="col-12 col-md-6 col-xl-3 mxd-partners-cards__item mxd-grid-item animate-card-4">
                     <a class="mxd-partners-cards__inner">
                       <div class="mxd-partners-cards__logo">
-                        <img src="img/inicio/clientes/color/sky.png" alt="Partner Logo">
+                        <img src="img/inicio/clientes/sky.png" alt="Partner Logo">
                       </div>
                     </a>
                   </div>
@@ -797,7 +829,7 @@
                 <div class="col-12 col-md-6 col-xl-3 mxd-partners-cards__item mxd-grid-item animate-card-4">
                   <a class="mxd-partners-cards__inner">
                     <div class="mxd-partners-cards__logo">
-                      <img src="img/inicio/clientes/color/courtyard.png" alt="Partner Logo">
+                      <img src="img/inicio/clientes/modelo.png" alt="Partner Logo">
                     </div>
                   </a>
                 </div>
@@ -805,7 +837,7 @@
                 <div class="col-12 col-md-6 col-xl-3 mxd-partners-cards__item mxd-grid-item animate-card-4">
                   <a class="mxd-partners-cards__inner">
                     <div class="mxd-partners-cards__logo">
-                      <img src="img/inicio/clientes/color/fucaps.png" alt="Partner Logo">
+                      <img src="img/inicio/clientes/amazon.png" alt="Partner Logo">
                     </div>
                   </a>
                 </div>
@@ -821,7 +853,7 @@
                 <div class="col-12 col-md-6 col-xl-3 mxd-partners-cards__item mxd-grid-item animate-card-4">
                   <a class="mxd-partners-cards__inner">
                     <div class="mxd-partners-cards__logo">
-                      <img src="img/inicio/clientes/color/faurecia.png" alt="Partner Logo">
+                      <img src="img/inicio/clientes/calidra.png" alt="Partner Logo">
                     </div>
                   </a>
                 </div>
@@ -829,7 +861,7 @@
                 <div class="col-12 col-md-6 col-xl-3 mxd-partners-cards__item mxd-grid-item animate-card-4">
                   <a class="mxd-partners-cards__inner">
                     <div class="mxd-partners-cards__logo">
-                      <img src="img/inicio/clientes/color/modelo.png" alt="Partner Logo">
+                      <img src="img/inicio/clientes/color/fucaps.png" alt="Partner Logo">
                     </div>
                   </a>
                 </div>
@@ -837,7 +869,7 @@
                 <div class="col-12 col-md-6 col-xl-3 mxd-partners-cards__item mxd-grid-item animate-card-4">
                   <a class="mxd-partners-cards__inner">
                     <div class="mxd-partners-cards__logo">
-                      <img src="img/inicio/clientes/color/kimberly.png" alt="Partner Logo">
+                      <img src="img/inicio/clientes/kimberly.png" alt="Partner Logo">
                     </div>
                   </a>
                 </div>
@@ -874,199 +906,106 @@
       </div>
       <!-- Section - Partners Cards End -->
 
-      <div class="mxd-section mxd-section-inner-headline padding-s-text-pre-block" style="padding-top: 0rem!important">
+      <div class="mxd-section padding-grid-pre-pinned" style="padding-bottom: 0!important;">
         <div class="mxd-container grid-container">
 
-          <!-- Block - Inner Page Headline Start -->
-          <div class="mxd-block loading-wrap">
-            <div class="container-fluid px-0">
-              <div class="row gx-0">
+          <!-- Block - Stack Universal Pinned Block with Section Title Start -->
+          <div class="mxd-block">
+            <div class="mxd-pinned-universal">
+              <div class="container-fluid px-0">
+                <div class="row gx-0">
+                  <div class="col-12 col-xl-5 mxd-pinned-universal__static">
+                    <div class="mxd-pinned-universal__static-inner no-margin">
 
-                <!-- Inner Headline Content Start -->
-                <div class="col-12 col-xl-12 mxd-grid-item no-margin">
+                      <!-- Section Title Start -->
+                      <div class="mxd-section-title h2-only no-margin-desktop">
+                        <div class="container-fluid p-0">
+                          <div class="row g-0">
+                            <div class="col-12 mxd-grid-item no-margin">
+                              <div class="mxd-section-title__title card-split-title">
+                                <h2 class="reveal-type diferenciadores-title">Por qué<br>elegirnos</h2>
+                              </div>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <!-- Section Title Start -->
 
-                  <div class="mxd-block__content" id="preguntas-frecuentes">
-                    <div class="mxd-block__inner-headline"
-                      style="display: flex; flex-direction: column; align-items: center; justify-content: flex-start; height: 100%;">
-                      <h2 style="margin-bottom: 0; padding-top: 0rem; text-align: center;">Diferenciadores y
-                        beneficios
-                      </h2>
-                      <p class="inner-headline__text t-large t-bright loading__item" style="text-align: center;">
-                        <br>¿Tienes
-                        alguna otra duda? <a
-                          href="https://wa.me/524411202520?text=Hola%2C%20quiero%20informaci%C3%B3n%20sobre%20AMZU%20Capacitaci%C3%B3n"
-                          target="_blank" rel="noopener">¡Contáctanos!</a>
-                      </p>
                     </div>
                   </div>
-
+                  <div class="col-12 col-xl-7 mxd-pinned-universal__scroll">
+                    <div class="mxd-pinned-universal__scroll-inner mxd-grid-item no-margin">
+                      <div class="mxd-tech-stack-cards grid-cards">
+                        <!-- item -->
+                        <div class="mxd-tech-stack-cards__item animate-card-4">
+                          <div class="mxd-tech-stack-cards__inner-v2">
+                            <div class="mxd-tech-stack-cards__icon">
+                              <img src="img/inicio/direfenciadores-instructores.png" alt="Tech Stack Icon">
+                            </div>
+                            <div class="mxd-tech-stack-cards__title">
+                              <p class="t-bright t-caption">Instructores expertos
+                                y certificados</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- item -->
+                        <div class="mxd-tech-stack-cards__item animate-card-4">
+                          <div class="mxd-tech-stack-cards__inner-v2">
+                            <div class="mxd-tech-stack-cards__icon">
+                              <img src="img/inicio/direfenciadores-adaptacion.png" alt="Tech Stack Icon">
+                            </div>
+                            <div class="mxd-tech-stack-cards__title">
+                              <p class="t-bright t-caption">Nos adaptamos a las necesidades de tu empresa
+                              </p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- item -->
+                        <div class="mxd-tech-stack-cards__item animate-card-4">
+                          <div class="mxd-tech-stack-cards__inner-v2">
+                            <div class="mxd-tech-stack-cards__icon">
+                              <img src="img/inicio/direfenciadores-garantia.png" alt="Tech Stack Icon">
+                            </div>
+                            <div class="mxd-tech-stack-cards__title">
+                              <p class="t-bright t-caption">Brindamos asesoría
+                                post-capacitación</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- item -->
+                        <div class="mxd-tech-stack-cards__item animate-card-4">
+                          <div class="mxd-tech-stack-cards__inner-v2">
+                            <div class="mxd-tech-stack-cards__icon">
+                              <img src="img/inicio/direfenciadores-garantia.png" alt="Tech Stack Icon">
+                            </div>
+                            <div class="mxd-tech-stack-cards__title">
+                              <p class="t-bright t-caption">Garantías por rotación y mejora de precio</p>
+                            </div>
+                          </div>
+                        </div>
+                        <!-- item -->
+                        <div class="mxd-tech-stack-cards__item animate-card-4">
+                          <div class="mxd-tech-stack-cards__inner-v2">
+                            <div class="mxd-tech-stack-cards__icon">
+                              <img src="img/inicio/direfenciadores-32-estados.png" alt="Tech Stack Icon">
+                            </div>
+                            <div class="mxd-tech-stack-cards__title">
+                              <p class="t-bright t-caption">Capacitamos en los 32 estados de la república</p>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
                 </div>
-                <!-- Inner Headline Content End -->
-
               </div>
             </div>
           </div>
-          <!-- Block - Inner Page Headline End -->
+          <!-- Block - Stack Universal Pinned Block with Section Title Start -->
 
         </div>
       </div>
       <!-- Section - Inner Page Headline End -->
-
-      <!-- Section - Inner Page Headline Start -->
-      <div class="mxd-section mxd-section-inner-form padding-default">
-        <div class="mxd-container grid-container">
-
-          <!-- Block - Inner Page Headline Start -->
-          <div class="mxd-block">
-            <div class="container-fluid px-0">
-              <div class="row gx-0">
-
-                <!-- Inner Headline Name Start -->
-                <div class="col-12 col-xl-2 mxd-grid-item no-margin"></div>
-                <!-- Inner Headline Name Start -->
-
-                <!-- Inner Headline Content Start -->
-                <div class="col-12 col-xl-8 mxd-grid-item no-margin">
-
-                  <div class="mxd-block__content">
-                    <div class="mxd-accordion loading__fade">
-                      <!-- accordion single item -->
-                      <div class="mxd-accordion__item">
-                        <div class="mxd-accordion__divider anim-uni-in-up"></div>
-                        <div class="mxd-accordion__title anim-uni-in-up">
-                          <h6>¿Y SI EL PERSONAL SE VA DESPUÉS DE CAPACITARSE?</h6>
-                          <div class="mxd-accordion__arrow">
-                            <i class="ph ph-plus"></i>
-                          </div>
-                        </div>
-                        <div class="mxd-accordion__content">
-                          <p align="justify" class="mxd-accordion__text">Somos los únicos en todo México que ofrecemos
-                            una
-                            garantía para proteger tu inversión: si un colaborador se separa dentro de los primeros 3
-                            meses, capacitamos sin costo a su nuevo ingreso. Continuidad y tranquilidad para su empresa.
-                            (Aplican términos y condiciones).
-                          </p>
-                        </div>
-                        <div class="mxd-accordion__divider anim-uni-in-up"></div>
-                      </div>
-                      <!-- accordion single item -->
-                      <div class="mxd-accordion__item">
-                        <div class="mxd-accordion__divider anim-uni-in-up"></div>
-                        <div class="mxd-accordion__title anim-uni-in-up">
-                          <h6>CAPACITACIÓN CON REALIDAD INMERSIVA</h6>
-                          <div class="mxd-accordion__arrow">
-                            <i class="ph ph-plus"></i>
-                          </div>
-                        </div>
-                        <div class="mxd-accordion__content">
-                          <p align="justify" class="mxd-accordion__text">Viva una nueva forma de capacitar: experiencias
-                            virtuales realistas donde sus participantes practican, resuelven y deciden en entornos
-                            simulados que impulsan la retención del conocimiento, fortalecen la seguridad y elevan la
-                            efectividad del entrenamiento.
-                          </p>
-                        </div>
-                        <div class="mxd-accordion__divider anim-uni-in-up"></div>
-                      </div>
-                      <!-- accordion single item -->
-                      <div class="mxd-accordion__item">
-                        <div class="mxd-accordion__divider anim-uni-in-up"></div>
-                        <div class="mxd-accordion__title anim-uni-in-up">
-                          <h6>GAMIFICACIÓN</h6>
-                          <div class="mxd-accordion__arrow">
-                            <i class="ph ph-plus"></i>
-                          </div>
-                        </div>
-                        <div class="mxd-accordion__content">
-                          <p align="justify" class="mxd-accordion__text">Cursos en línea que incorporan elementos de
-                            juego
-                            como puntos, retos y recompensas para motivar la participación, aumentar el compromiso y
-                            mejorar el aprendizaje, haciendo que la experiencia de capacitación sea más dinámica,
-                            interactiva y efectiva.
-                          </p>
-                        </div>
-                        <div class="mxd-accordion__divider anim-uni-in-up"></div>
-                      </div>
-                      <!-- accordion single item -->
-                      <div class="mxd-accordion__item">
-                        <div class="mxd-accordion__divider anim-uni-in-up"></div>
-                        <div class="mxd-accordion__title anim-uni-in-up">
-                          <h6>RESPUESTA INMEDIATA</h6>
-                          <div class="mxd-accordion__arrow">
-                            <i class="ph ph-plus"></i>
-                          </div>
-                        </div>
-                        <div class="mxd-accordion__content">
-                          <p align="justify" class="mxd-accordion__text">Atención rápida y eficiente ante cualquier
-                            solicitud, brindando soluciones ágiles en cotizaciones, inscripciones o dudas sobre cursos.
-                          </p>
-                        </div>
-                        <div class="mxd-accordion__divider anim-uni-in-up"></div>
-                      </div>
-                      <!-- accordion single item -->
-                      <div class="mxd-accordion__item">
-                        <div class="mxd-accordion__divider anim-uni-in-up"></div>
-                        <div class="mxd-accordion__title anim-uni-in-up">
-                          <h6>ENTREGAS URGENTES</h6>
-                          <div class="mxd-accordion__arrow">
-                            <i class="ph ph-plus"></i>
-                          </div>
-                        </div>
-                        <div class="mxd-accordion__content">
-                          <p align="justify" class="mxd-accordion__text">
-                            Proporcionamos documentos, constancias y reportes de capacitación de forma rápida y
-                            eficiente,
-                            asegurando que tu empresa cumpla en tiempo con sus requerimientos y auditorías.
-                          </p>
-                        </div>
-                        <div class="mxd-accordion__divider anim-uni-in-up"></div>
-                      </div>
-                      <!-- accordion single item -->
-                      <div class="mxd-accordion__item">
-                        <div class="mxd-accordion__divider anim-uni-in-up"></div>
-                        <div class="mxd-accordion__title anim-uni-in-up">
-                          <h6>COTIZACIONES CON TARIFA DINÁMICA</h6>
-                          <div class="mxd-accordion__arrow">
-                            <i class="ph ph-plus"></i>
-                          </div>
-                        </div>
-                        <div class="mxd-accordion__content">
-                          <p align="justify" class="mxd-accordion__text">Adaptadas a las necesidades, número de
-                            participantes y modalidad del curso, garantizando siempre la mejor relación costo-beneficio
-                            para tu empresa.
-                          </p>
-                        </div>
-                        <div class="mxd-accordion__divider anim-uni-in-up"></div>
-                      </div>
-                      <!-- accordion single item -->
-                      <div class="mxd-accordion__item">
-                        <div class="mxd-accordion__divider anim-uni-in-up"></div>
-                        <div class="mxd-accordion__title anim-uni-in-up">
-                          <h6>POSIBILIDAD DE ARMAR TU PROPIA COTIZACIÓN</h6>
-                          <div class="mxd-accordion__arrow">
-                            <i class="ph ph-plus"></i>
-                          </div>
-                        </div>
-                        <div class="mxd-accordion__content">
-                          <p align="justify" class="mxd-accordion__text">Puedes seleccionar los cursos, modalidades y
-                            servicios adicionales que mejor se adapten a tus necesidades, obteniendo una propuesta
-                            personalizada al instante.
-                          </p>
-                        </div>
-                        <div class="mxd-accordion__divider anim-uni-in-up"></div>
-                      </div>
-                    </div>
-                  </div>
-
-                </div>
-                <!-- Inner Headline Content End -->
-
-              </div>
-            </div>
-          </div>
-          <!-- Block - Inner Page Headline End -->
-
-        </div>
-      </div>
 
   </main>
   <!-- Page Content End -->
@@ -1187,7 +1126,7 @@
                   </span>
                   <span class="mxd-footer-promo__item">
                     <span class="mxd-footer-promo__link anim-uni-in-up">
-                      <span class="phone-static" data-phone="+524412953643">441 295 3643</span> <br>
+                      <span class="phone-static" data-phone="+524422953643">442 295 3643</span> <br>
                       <a href="#" class="phone-link phone-whatsapp" data-phone="+524427878079">442 787 8079</a>
                     </span>
                   </span>
