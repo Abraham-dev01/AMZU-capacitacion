@@ -619,24 +619,24 @@
 }
 
 @media only screen and (max-width: 578px) {
+  /* No escales todo el botón, solo ajusta su texto e ícono */
   .mxd-grid-item.no-margin .mxd-section-title__controls .btn {
-    /* Escala todo el botón */
-    transform: scale(1);
-    transform-origin: center;
-    /* Suaviza la transición */
-    transition: transform 0.3s ease;
+    transform: none;
+    transition: none;
   }
 
-  /* Ajustar el tamaño del texto */
-  .mxd-grid-item.no-margin .mxd-section-title__controls .btn-caption {
-    font-size: 1.2rem;
+  /* Texto del botón más pequeño */
+  .mxd-grid-item.no-margin .mxd-section-title__controls .btn .btn-caption {
+    font-size: 1.9rem !important;
+    letter-spacing: 0.5px;
   }
 
-  /* Ajustar el tamaño del ícono */
+  /* Ícono un poco más pequeño también, si quieres */
   .mxd-grid-item.no-margin .mxd-section-title__controls .btn i {
-    font-size: 1.2rem;
+    font-size: 2rem;
   }
 }
+
 
 @media only screen and (max-width: 768px) {
   .mxd-project-item__promo {
@@ -810,6 +810,46 @@
 
 /* Estilos para el carrusel de cursos */
 
+/* Botones del carrusel */
+
+.marquee {
+  position: relative;
+  overflow: hidden;
+}
+
+.marquee-btn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 10;
+  background-color: rgba(0, 0, 0, 0.8);
+  color: white;
+  border: none;
+  font-size: 22px;
+  width: 48px;
+  height: 48px;
+  cursor: pointer;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all 0.3s ease;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.3);
+}
+
+.marquee-btn:hover {
+  background-color: rgba(0, 0, 0, 1);
+  transform: translateY(-50%) scale(1.1);
+}
+
+.marquee-btn--left {
+  left: 10px;
+}
+
+.marquee-btn--right {
+  right: 10px;
+}
+
 /* Contenedor de cada curso */
 .marquee__item {
   display: flex;
@@ -843,7 +883,6 @@
   -webkit-text-stroke: 1px black; /* borde negro alrededor */
   text-decoration: none;
 }
-
 
 @media (max-width: 768px) {
   .marquee__item {
@@ -1014,5 +1053,29 @@ header .main-menu--inline .main-menu__link:hover .btn-caption {
 @media (max-width: 1420px) {
   header .main-menu--inline {
     display: none !important;
+  }
+}
+
+/* Tarjetas apilables del inicio */
+
+.mxd-projects-stack__title {
+  position: relative;
+  z-index: 1;
+  padding: 2rem;
+}
+
+.mxd-projects-stack__title::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(6px);
+  border-radius: 10px;
+  z-index: -1;
+}
+
+@media (max-width: 417px) {
+  .permanent-light.custom-title {
+    font-size: 3.5rem !important;
   }
 }
